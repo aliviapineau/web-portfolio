@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>May 10 Warning</title>
+	<link rel="icon" type="image/png" href="https://assets.altimetry.com/mkt/2023/MCC/Hotlist-May/favicon.ico">
+	<link href="https://secure-prod-assets.s3.amazonaws.com/common/css/bootstrap/bootstrap.min.4.3.1.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700italic,700|Libre+Baskerville:400,400italic" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+	<script src="https://cmp.osano.com/AzydZ7TEJc3cu8mk6/1b9b41f1-52cc-404b-b173-d657a5b62ad3/osano.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://s3.amazonaws.com/hopstatic/js/jquery.countdown.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.4.0/moment-timezone-with-data-2010-2020.min.js"></script> 
+	<script src="js/nav-setup.js" type="text/javascript"></script>
+	
+	<!--<script>window.location.replace('https://webinar.getoutofcashevent.com/#/client/getoutofcashevent');</script-->
+	<!--THE BELOW SCRIPT IS TO HIDE THE COOKIE BANNER FOR THE U.S.-->
+	<script>
+		Osano.cm.addEventListener('osano-cm-initialized', () => {
+			console.log('[osano] script initialized...');
+			if (window.Osano.cm.countryCode === 'us') {
+				console.log('[osano] hiding dialog...');
+				window.Osano.cm.hideDialog();
+			}
+		});
+		<!--END HIDE COOKIE BANNER FOR THE U.S.-->
+		setTimeout(function pause_countdown(){
+			$('#event-timer').countdown('2023/3/28 20:00:00', function(event) {
+
+				$(this).html(event.strftime('<div><span>%D</span> day%!D</div>'+'<div><span>%H</span> hour%!H</div>' + '<div><span>%M</span> minute%!M</div>' + '<div><span>%S</span> second%!S</div>'));
+			});
+			$('#event-timer').on('finish.countdown', function(event) {
+				$(this).html('').parent().addClass('disabled');
+			});
+		}, 2000);
+	</script>
+
+	<style>
+		.osano-cm-widget{display: none;}
+		mark{background-color: #FFF036; padding:0;}
+		.profile-highlight{border:solid 1px #dedede; border-radius: 500px;}
+		.headline-container {
+			color: #fff;
+			left: 50%;
+			margin: 0 auto;
+			max-width: 1400px;
+			padding: 0 20px;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+			z-index: 10;
+		}
+		.showcase.home {height:900px;}
+		#event-timer {
+			margin-top: 10px;
+		}
+
+
+
+
+		.top-player {margin-bottom:50px; }
+		.testimonial {margin-bottom:50px;}
+/*
+	.short-headline span {
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+		text-transform: uppercase;
+		font-size: 1.3em;
+	}
+*/
+		.headline-container h1 {
+			font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+			display: block;
+			margin: 0 auto 30px;
+			text-align: center;
+			font-weight: normal;
+		}
+
+		.headline-container h1 span{
+			text-transform: uppercase;	
+		}
+
+		.headline-container h3 {
+			color: #fff;
+			font-family: "Gibson-SemiBold", arial, sans-serif;
+			font-size: 34px;
+			line-height: 1.2;
+			display: block;
+			margin: 20px auto;
+			max-width: 1000px;
+			text-align: center;
+		}
+		.callLoop-tophead {
+			border: none;
+			border-top: 2px solid #ffffff;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1000px;
+		}
+
+		#CallLoop .callloop-submit {
+/*
+    background: -moz-linear-gradient(center top, rgba(27, 159, 9, 0.3) 0%, rgba(20, 105, 8, 0.3) 100%) repeat scroll 0 0 #41c130;
+    background: -webkit-linear-gradient(top, rgba(27, 159, 9, 0.3) 0%, rgba(20, 105, 8, 0.3) 100%) repeat scroll 0 0 #41c130;
+    background: linear-gradient(to bottom, rgba(27, 159, 9, 0.3) 0%, rgba(20, 105, 8, 0.3) 100%) repeat scroll 0 0 #41c130;
+    border-color: #2fa41f #1d7112 #1d7112 #2fa41f;
+*/
+/*    border-radius: 3px;*/
+color: #ffffff; 
+cursor: pointer;
+font-family: "Gibson-SemiBold", Helvetica, Arial, sans-serif;
+font-size: 20px;
+font-weight: bold;
+margin: 10px auto;
+padding: 9px 12px;
+text-decoration: none;
+display: block;
+border-style: solid;
+border-width: 1px;
+width: 100%;
+}
+
+.callloop-bottom {
+	color: #aaa;
+	font-size: 10px;
+	margin: 20px auto 0;
+	text-align: left;
+	font-family: "Gibson-SemiBold", arial, sans-serif;
+}
+.callloop-bottom p{
+	text-align: center !important;
+	font-size: 15px;
+}	
+#home{
+	background-color: #FF9911;
+	color: #fff;
+/*
+        text-decoration: underline;
+        text-underline-offset: 5px;
+*/
+} 
+
+#home a{
+	color: #fff;
+/*
+        text-decoration: underline;
+        text-underline-offset: 5px;
+*/
+} 	
+
+.bottom-video{
+	margin-top: 20px;
+}
+
+
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+	max-width: 1200px;
+	justify-content: center;
+	margin: 10px auto;
+}
+.footerItem {font-family: verdana,sans-serif;font-size: 12px;color: #0d3e6f;line-height: 20px;padding: 0 15px;border-right: 2px solid #bbb;text-decoration: none;}
+.footerItem:hover{text-decoration: none;}
+.footerItem:last-child{border-right:none;}
+@media (max-width: 960px){
+	.footerRow {flex-direction: column;text-align: center;
+	}
+}
+@media only screen and (min-width: 576px) {
+	.headline-container form .row .col-sm-8 {
+		padding: 0 5px;
+	}
+	.headline-container form .row .col-sm-4 {
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.headline-container {
+		padding: 0;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-45%);
+	}
+	.headline-container h1{font-size: 40px;}
+}
+
+
+@media screen and (max-width: 320px) {
+
+	#event-timer {
+		font-size: 12px;
+	}
+	#event-timer span {
+		font-size: 36px;
+	}
+}
+/*UPDATES*/
+.showcase.home {
+	height: 800px;
+}
+.headline-container {
+}
+.headline-container h1 {
+	font-family: "Gibson-SemiBold", sans-serif;
+	line-height: 1.1;
+	font-size: 60px;
+}
+.headline-container .callloop-bottom {
+	margin-top: 10px;
+}
+#CallLoop .callloop-submit {
+	background-color: #f28700;
+}
+
+.header-callloop{
+	margin-top: 20px;
+}
+
+.header-callloop p{
+	font-size: 22px;
+	line-height: 1.2;
+	padding-bottom: 10px;
+
+}
+.callLoop-tophead {
+	padding-bottom: 0;
+}
+.headline-container #CallLoop input[type="text"] {
+	border: none; 
+	padding: 9px 14px;
+	text-align: left;
+}
+.headline-container button#Submit2 {
+	margin: 0 auto;
+	padding: 12px;
+}
+@media only screen and (min-width: 576px) {
+	.headline-container #CallLoop .row .col-sm-7 .row .col-sm-7 {
+		padding: 0;
+	}
+	.headline-container form .row .col-sm-4 {
+		padding: 0 0 0 8px;
+	}
+	.headline-container #CallLoop input[type="text"] {
+		margin: 0 auto;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 1101px) {
+
+	.headline-container #event-timer {
+		margin: 0 auto 30px;
+	}
+	.headline-container #event-timer span {
+		font-size: 90px;
+		line-height: 0.9;
+	}
+
+	.headline-container button#Submit2 {
+		margin: 0 auto;
+		font-size: 22px;
+		padding: 12px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.headline-container h1 {
+		font-size: 45px;
+		margin-bottom: 0px;
+	}
+	.short-headline {
+		margin-bottom: 0;
+	}
+
+	.headline-container h3 {
+		font-size: 22px;
+	}	
+
+}
+@media only screen and (max-width: 768px) {
+	#CallLoop .imgCenter {
+		font-size: 48px;
+		margin-bottom: 10px;
+		max-width: 350px;
+		margin: 0 auto !important;
+	} 
+	.header-callloop p {
+		font-size: 17px;
+		text-align: center !important;
+	}
+	.header-callloop {
+		margin-top: 0;
+	}
+
+	.headline-container #CallLoop input[type="text"] {
+		border: none;
+		padding: 3px 14px;
+		text-align: left;
+	}
+	.headline-container button#Submit2 {
+		margin: 0 auto;
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.headline-container h1 {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+
+
+	.headline-container h3 {
+		font-size: 22px;
+	}	
+	.header-callloop p {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+
+	.headline-container #CallLoop .row .col-sm-7 .row .col-sm-7 {
+		padding: 0;
+	}
+	.headline-container #CallLoop .row .col-sm-7 .row .col-sm-4 {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.headline-container {
+		padding: 0 10px;
+	}
+	.headline-container h1 {
+		font-size: 36px;
+		margin-bottom: 0.5em;
+	}
+}
+/*END UPDATES*/
+</style>
+</head>
+
+<body>
+	<div class="vip-sticky">
+		<script type="text/javascript">
+			function capitalizeMe(obj) {
+				val = obj.value;
+				newVal = '';
+				val = val.split(' ');
+				for(var c=0; c < val.length; c++) {
+					newVal += val[c].substring(0,1).toUpperCase() + val[c].substring(1,val[c].length) + ' ';
+				}
+				obj.value = newVal;
+			}
+			function webform_validate2() {
+				var msg = '';
+				if (document.getElementById('Phone').value.replace(/[^0-9]/, '').length < 10) {
+					msg += "The phone field is required. Please enter all 10 digits, including the area code.\n";
+				}
+
+				if (msg) {
+					alert(msg);
+					return false;
+				}
+				return true;
+			}
+
+		</script>
+		<label for="vip-toggle" class="vip-toggle" >BECOME A VIP</label>
+		<form id="callForm" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+			<div id="CallLoop" style="margin-bottom: 10px;">
+				<h3>Enter your cell phone number to unlock Joel’s 6-Part Interview Series and more:</h3>
+				<div id="phone-number">
+					<input type="text" name="Phone" id="Phone" placeholder="555-123-4567" />
+				</div>
+				<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+				<div class="callloop-bottom">By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</div>
+			</div>
+		</form>
+	</div>
+	<div id="nav-content"></div>
+
+	<div id="content-wrapper">
+		<section class="showcase home">
+      <!--  <video autoplay="autoplay" class="showcase-video" data-height="550" data-width="1280" loop="loop" muted="muted" playsinline="">
+            <img src="img/bg-showcase-1.jpg" alt="Video is not supported on your browser">
+            <source src="img/bg-showcase-vid.mp4" type="video/mp4">
+            </video>-->
+            <img src="img/bg-showcase-home.jpg" alt="Background" class="background-hero" style="filter: opacity(1);"/>
+            <div class="headline-container">
+
+            	<!--                    <h3 class="kicker">He’s been pounding the table <br class="hide-me"> on U.S. stocks for over a decade...</h3>-->
+            	<h1 class="short-headline"><span>20X Bigger</span> Than the <br class="hide-me">Bank Collapse of 2023</h1>
+            	<h3 class="long-headline">Over HALF the U.S. stock market ($10 Trillion) is set to move in less than 60 days. It's time to protect your money now.</h3>
+            	<!--					<div id="event-timer"></div>-->
+            	<!--Form Here-->
+            	<form id="callForm2" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+            		<div id="CallLoop" class="callLoop-fix callLoop-mobile-header callLoop-tophead">
+            			<div class="row">
+            				<div class="col-md-6">
+
+            					<img src="./img/vip-bonus-videos.png" alt="Report Image" class="imgCenter" style="margin:0 auto; width: 100%">
+
+            				</div>
+            				<div class="col-md-6 header-callloop">
+            					<p>Enter your cell phone number to unlock Joel’s 6-Part Interview Series and more:</p>
+            					<div class="row">
+            						<div class="col-sm-12">
+            							<div id="phone-number">
+            								<input type="text" name="Phone" id="Phone3" placeholder="Enter your cell number">
+            							</div>
+            						</div>
+            						<div class="col-sm-12" style="padding-top: 10px;">
+            							<button class="callloop-submit" name="Submit" id="Submit2" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+            						</div>
+            					</div>
+            					<div class="callloop-bottom">By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</div>
+            				</div>
+            			</div>
+            		</div>
+            	</form>
+            	<!-- Form End-->
+            </div>
+            <div class="home-scroll">
+            	<img src="https://s3.amazonaws.com/static.cloudsna.com/store/PROD/images/SIR/5G/scroll-arrow.svg" alt="scroll down">
+            </div>
+        </section>
+
+
+        <section class="copy" id="site-intro">
+        	<div class="container">
+
+        		<div class="home-player">   
+        			<div class="player-container">
+        				<div class="vsc-controller" data-vscid="8i7jp5z59">&nbsp;</div>
+        				<video-js data-account="5298920694001" data-player="k7kYTMBz75" data-embed="default" controls="" data-video-id="6326635984112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js><script src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.min.js"></script>
+        			</div>
+        		</div> 
+
+        		<form id="callForm3" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+        			<div id="CallLoop" class="callLoop-fix callLoop-mobile-header">
+        				<p class="call-p">Enter your phone number to unlock 2 stocks you should run through the Detector immediately:</p>
+        				<div class="row">
+        					<div class="col-sm-8">
+        						<div id="phone-number">
+        							<input type="text" name="Phone" id="Phone3" placeholder="555-123-4567">
+        						</div>
+        					</div>
+        					<div class="col-sm-4">
+        						<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+        					</div>
+        				</div>
+        				<div class="callloop-bottom"><p>By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p></div>
+        			</div>
+        		</form>
+
+        		<p></p>
+        		<!-- Primary Copy  -->
+
+        		<p>Welcome to the private website for Joel Litman's urgent briefing airing on Wednesday, May 10 at 8 p.m. Eastern time.</p>
+        		<p>On that day, he'll reveal a shocking event coming for Wall Street in less than 60 days: A tidal wave of money – $10 trillion – will be set in motion in a single DAY.</p>
+        		<p><strong>That's HALF the entire U.S. stock market.</strong></p>
+
+
+        		<p>And 20X the amount of money wiped out in the Silicon Valley Bank collapse this spring.</p>
+        		<p>Household names you recognize (and possibly even own) will be affected, including Apple, Amazon, Tesla, Google, and thousands of others.</p>
+        		<p>And the LAST time we saw this same Wall Street event, over 100 stocks lost 20% to 90% of their value overnight... while dozens of others skyrocketed over 100%. </p>
+        		<p>Meanwhile, you could have had the chance to <em>triple your money</em> in just 60 days while avoiding the biggest losers.</p>
+        		<p>Joel says it's about to happen again...</p>
+        		<p>Calling it, "The biggest stock market event of 2023. The next 60 days could dictate your next decade of success – or failure – in the U.S. stock market."</p>
+        		<p><strong>But to be clear, this is NOT a prediction.</strong></p>
+        		<p>Joel warns:</p>
+        		<div class="quoteblock-orange">
+        			<div class="quote-tab">
+        				<div class="alert"></div>
+        			</div>
+        			<div>
+        				<div>
+        					<div>
+        						<div>
+        							<p><strong>"We know for a FACT this is going to happen...</strong><br>
+        								<br>
+        								<strong>The biggest names on Wall Street, from Vanguard to Citadel, have the date marked on their calendars...</strong><br>
+        								<br>
+        								<strong>Your only decision right now is to get onboard or get left behind."</strong></p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+
+        			<p>It's such a watershed moment, one that could make or break people's wealth for years, that Joel is going live on May 10 to sound the alarm. </p>
+        			<p>On Wednesday, Joel will share the exact date of this dramatic market shift... what you need to do to prepare... and even the name and ticker of a stock he says could suffer 80% losses by the end of 2023.</p>
+        			<p>To prepare you for May 10, we've assembled all of your exclusive bonuses on this website, including:</p>
+        			<div class="bullets">
+        				<p><a href="about.html"><strong>Joel's story.</strong></a></p>
+        				<p>Joel is one of the most sought-after figures in the financial world. His fans include the Pentagon, the Department of Defense, the FBI, the Marine Corps War College, the top 10 global investing houses, and over half of the world’s 300 biggest money managers.</p>
+        				<p><strong><a href="about.html">This short video</a> will give you a glimpse into Joel’s uncanny ability to predict major market events and see the truth behind any stock.</strong></p>
+        			</div>
+        			<div class="bullets">
+        				<p><strong>LOCKED CONTENT: Exclusive <a href="unlock-vip.html">Exclusive 6-part interview series </a>where Joel takes you behind the scenes of Wall Street.</strong></p>
+
+        				<div class="row" style="margin-bottom:20px;">
+
+        					<div class="col-12">
+        						<form id="callForm3" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+        							<div id="CallLoop" class="callLoop-fix callLoop-mobile-header">
+        								<p class="call-p">Enter your phone number to unlock bonus: </p>
+        								<div class="row">
+        									<div class="col-sm-8">
+        										<div id="phone-number">
+        											<input type="text" name="Phone" id="Phone3" placeholder="555-123-4567">
+        										</div>
+        									</div>
+        									<div class="col-sm-4">
+        										<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+        									</div>
+        								</div>
+        								<div class="callloop-bottom"><p>By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p></div>
+        							</div>
+        						</form>
+        					</div>
+        				</div>
+        				<div class="bullets target">
+        					<p><strong>VIDEO #1:</strong></p>
+        					<p>Joel shares practical advice for anyone in the stock market right now, including one mistake you've probably made with your money.  Plus, Joel reveals his favorite investment asset.</p>
+        				</div>
+        				<div class="bullets target">
+        					<p><strong>VIDEO #2:</strong> (Unlocks on Saturday, May 6)</p>
+        					<p>Joel blows a hole in common investing "knowledge", including the classic 60/40 portfolio (and what you should consider doing instead). </p>
+        				</div>
+        				<div class="bullets target">	
+        					<p><strong>VIDEO #3:</strong> (Unlocks on Sunday, May 7)</p>
+        					<p>Joel reveals why you can't trust Wall Street's accounting... and offers a sneak peek at the forensic tools he uses to spot fraud (some of them inspired by Mossad technology).</p>
+        				</div>
+        				<div class="bullets target">	
+        					<p><strong>VIDEO #4: </strong> (Unlocks on Monday, May 8)<strong></strong></p>
+        					<p>Joel gives an urgent warning that could make or break your portfolio: "If your financial advisor isn't doing this...there's something wrong with them!" </p>
+        				</div>
+        				<div class="bullets target">
+        					<p><strong>VIDEO #5: </strong> (Unlocks on Tuesday, May 9)<strong></strong></p>
+        					<p>Behind the scenes of Joel's stock picking system – and why you shouldn't take stock picks from Goldman and Yahoo Finance at face value (or you could pay for it, literally).</p>
+        				</div>
+        				<div class="bullets target">
+        					<p><strong>VIDEO #6: </strong> (Unlocks on Wednesday, May 10)<strong></strong></p>
+        					<p>Joel explains some of Wall Street's worst habits that cost investors money, and why Warren Buffett would never trust EBIDTA (so you shouldn't either). </p>
+        				</div>	
+        			</div>
+        			<div class="bullets">
+        				<p><strong><a href="truth-detector.html">FREE access to the Wall Street Truth Detector.</a></strong></p>
+        				<p>Type in hundreds of different tickers to see which stocks could soar or drop tomorrow. <strong><a href="https://may10warning.com/truth-detector.html#training-video1">We've even included a free tutorial showing you how to use it.</a></strong></p>
+        				<p class="bullets target"><strong>VIDEO #1:</strong> How the detector works. With just a ticker symbol and the click of a button, you can dive under the hood of hundreds of public companies and see their reported earnings vs their <em>true</em> earnings (and whether the stock is a "buy").</p>
+        				<p class="bullets target"><strong>VIDEO #2:</strong> Two examples of the detector in action, using a stock that jumped 112% and another that tanked 38%.</p>
+        				<p class="bullets target"><strong>VIDEO #3:</strong> Revealing why Wall Street DOESN'T want you to know these numbers.</p>
+
+        			</div>
+
+        			<div class="row" style="margin-bottom:20px;">
+
+        				<div class="col-12">
+        					<form id="callForm3" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+        						<div id="CallLoop" class="callLoop-fix callLoop-mobile-header">
+        							<p class="call-p">Enter your phone number to unlock 2 stocks you should run through the Detector immediately: </p>
+        							<div class="row">
+        								<div class="col-sm-8">
+        									<div id="phone-number">
+        										<input type="text" name="Phone" id="Phone3" placeholder="555-123-4567">
+        									</div>
+        								</div>
+        								<div class="col-sm-4">
+        									<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+        								</div>
+        							</div>
+        							<div class="callloop-bottom"><p>By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p></div>
+        						</div>
+        					</form>
+        				</div>
+        			</div>
+
+
+
+        			<div class="bullets">
+        				<p><strong><a href="stories.html">Real success stories from Joel’s readers. </a></strong></p>
+        				<p>(One reader says, "Joel, you and your team have made me rich.")</p>
+        			</div>
+
+        			<h3>Why Stansberry Research urges you to join us live on May 10:</h3>
+
+        			<!--***VIDEO HERE**** -->         
+        			<div class="home-player">   
+        				<div class="player-container">
+        					<div class="vsc-controller" data-vscid="8i7jp5z59">&nbsp;</div>
+        					<video-js data-account="5298920694001" data-player="k7kYTMBz75" data-embed="default" controls="" data-video-id="6326633917112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js><script src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.min.js"></script>
+        				</div>
+        			</div> 
+        			<div class="home-player">   
+        				<div class="player-container">
+        					<div class="vsc-controller" data-vscid="8i7jp5z59">&nbsp;</div>
+        					<video-js data-account="5298920694001" data-player="k7kYTMBz75" data-embed="default" controls="" data-video-id="6326636078112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js><script src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.min.js"></script>
+        				</div>
+        			</div> 
+        			<p></p>
+        			<h3>Special message from 50-year Wall Street Legend, Marc Chaikin:</h3>
+        			<div class="home-player">   
+        				<div class="player-container">
+        					<div class="vsc-controller" data-vscid="8i7jp5z59">&nbsp;</div>
+        					<video-js data-account="5298920694001" data-player="k7kYTMBz75" data-embed="default" controls="" data-video-id="6326636870112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js><script src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.min.js"></script>
+        				</div>
+        			</div> 
+
+        			<p class="bottom-video">So why now? Marc says, “We’re facing a whole new investing landscape in 2023. I want to show you how to turn the table on all the volatility we’ve been experiencing and actually turn it to your advantage. This could make 2023 your most profitable year ever, IF you act now.”</p> 
+        			<!--***VIDEO ENDS****-->
+        			<p style="margin-bottom:0;">&nbsp;</p>
+        			<form id="callForm3" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+        				<div id="CallLoop" class="callLoop-fix callLoop-mobile-header">
+        					<p class="call-p">Enter your phone number to unlock 2 stocks you should run through the Detector immediately:</p>
+        					<div class="row">
+        						<div class="col-sm-8">
+        							<div id="phone-number">
+        								<input type="text" name="Phone" id="Phone3" placeholder="555-123-4567">
+        							</div>
+        						</div>
+        						<div class="col-sm-4">
+        							<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+        						</div>
+        					</div>
+        					<div class="callloop-bottom"><p>By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p></div>
+        				</div>
+        			</form>
+
+
+
+
+        			<h3>Here's your checklist for next Wednesday:</h3>
+        			<ul class="shortList no-padding">
+        				<li class="bullets check">
+        					<p>Add a calendar reminder for the event <a href="https://may10warning.com/may10warning.ics" target="_blank">by clicking here.</a></p>
+        				</li>
+        				<li class="bullets check">
+        					<p>On May 10, please arrive 5 to 10 minutes early to this to this website (<a href="https://www.may10warning.com" target="_self">www.May10Warning.com</a>) so you can test your sound and connection. We'll begin promptly at 8pm ET.</p></li>
+        					<li class="bullets check">
+        						<p>Have a pen and paper handy to take notes. Joel will share critical details on this massive shift hitting Wall Street in the next few weeks. <br /><br />He'll also use his elite system on camera to <strong>reveal one stock he expects to soar... and another stock doomed for catastrophic losses in 2023.</strong></p>
+        					</li>
+        				</ul>
+        				<h3>Here's the No. 1 step we recommend you take right now to prepare for the event:</h3>
+        				<div class="row" style="margin-bottom:20px;margin-top:50px;">
+
+        					<div class="col-12">
+        						<form id="callForm5" method="post" action="https://webforms.callloop.com/Services/ListCapture.aspx?webform_id=f380d094-5a7a-4b19-b439-e62dca804885" onsubmit="javascript: return webform_validate();">
+        							<div id="CallLoop" class="callLoop-fix callLoop-mobile-header">
+        								<p class="call-p">Enter your cell phone number to see the first 2 stocks you should run through the Wall Street Truth Detector:</p>
+        								<div class="row">
+        									<div class="col-sm-8">
+        										<div id="phone-number">
+        											<input type="text" name="Phone" id="Phone3" placeholder="555-123-4567">
+        										</div>
+        									</div>
+        									<div class="col-sm-4">
+        										<button class="callloop-submit" name="Submit" id="Submit" type="submit" value="Subscribe" data-event-track="textMessageSubcribe">Sign Up</button>
+        									</div>
+        								</div>
+        								<div class="callloop-bottom"><p>By submitting your phone number, you give express written consent to receive automated texts with reminders from Altimetry for the May 10 briefing at the phone number you provide above, even if the phone number is on a corporate, state, or national Do Not Call list. Msg&data rates may apply. No purchase required. Text STOP to discontinue. <a href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p></div>
+        							</div>
+        						</form>
+        					</div>
+        				</div>  
+        				<!--                    OLD CODE-->
+        			</div>
+        		</div>
+        	</section>
+
+
+
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="footer">
+        	<div class="footerRow">
+        		<a class="footerItem" href="https://altimetry.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> <a class="footerItem" href="https://altimetry.com/terms-of-use" target="_blank" rel="noopener">Terms of Use</a> <a class="footerItem" href="https://altimetry.com/privacy-policy#adchoice"
+        		target="_blank" rel="noopener">Ad Choices</a> <a class="footerItem" href="https://altimetry.com/dmca" target="_blank" rel="noopener">DMCA Policy</a> <a class="footerItem" href="https://beaconstreet-privacy.my.onetrust.com/webform/c246f198-7123-4766-b29c-917342eff0f7/b69eb8ba-bed8-471b-8670-5c53e3ba9da9"
+        		target="_blank" rel="noopener">Do Not Sell My Personal Information</a> <a class="footerItem" href="#a" onclick="window.Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')" data-ol-has-click-handler="">Cookie Preferences</a>
+        	</div>	
+        	<p class="general"> &copy; 2023 Altimetry Research. All rights reserved. </p>      
+        </div>
+        <!--    <script src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+        	$( function() {
+        		$( ".vip-toggle" ).on( "click", function() {
+        			$( ".vip-sticky" ).toggleClass( "active", 1000 );
+        		});
+        	} );
+        </script>
+    </body>
+    </html>    

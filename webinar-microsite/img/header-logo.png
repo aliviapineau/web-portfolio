@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<head>
+<title>
+        Altimetry
+    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="" />
+<meta name="copyright" content="2023 Altimetry" />
+<link rel="icon" type="image/png" href="/assets/favicon.ico" />
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="https://use.typekit.net/rwk3jhe.css">
+<script src="https://cmp.osano.com/AzydZ7TEJc3cu8mk6/a116d877-a7d0-4b0d-8c96-9dc439a1834a/osano.js"></script>
+<style>.osano-cm-widget{display: none !important;}</style>
+<script src="/assets/js/es6-promise.min.js"></script>
+<script src="/assets/js/es6-promise.auto.min.js"></script>
+<script src="/assets/js/ie11-polyfills.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/moment.min.js"></script>
+<script src="/assets/js/iframeResizer.min.js"></script>
+<script src="/assets/js/main.min.js"></script>
+<script src="/assets/js/header.min.js"></script>
+<script src="/assets/js/ui.min.js"></script>
+<script>
+    Osano.cm.addEventListener('osano-cm-initialized', () => {
+        console.log('[osano] script initialized...');
+        if (window.Osano.cm.countryCode === 'us') {
+            console.log('[osano] hiding dialog...');
+            window.Osano.cm.hideDialog();
+        }
+    });
+    </script>
+<style>
+        
+    </style>
+<script src="/assets/js/slick.min.js"></script>
+<script src="/assets/js/slider.min.js"></script>
+<script src="/assets/js/countUp.min.js"></script>
+<script src="/assets/js/home.min.js"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K85DK6Q');</script>
+
+<script type="text/javascript">
+    (function ($) {
+        $(document).ready(function () {
+            if ((localStorage.getItem('sessionId') === null) || (localStorage.getItem('sessionId') !== '')) {
+                localStorage.setItem('sessionId', '')
+            }
+        })
+    })(jQuery)
+</script>
+<style>
+            
+        </style>
+</head>
+<body class="print-styles logged-out public-page">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K85DK6Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="header-swap print-hide">
+<div id="main-header" class="main-header">
+<form method="get" action="/search" autocomplete="off">
+<div class="main-header__container">
+<div class="logo main-header__container__col">
+<a href="/"><img alt="Altimetry" id="altimetry-logo" class="logo__image" src="/assets/images/logo.svg"></a>
+<span class="logo__subscriber-text">
+Subscriber Portal
+</span>
+</div>
+<div class="navigation main-header__container__col">
+<div class="navigation__item">
+<a href="/contact">
+Contact
+</a>
+</div>
+<div class="navigation__item">
+<a href="/sign-in">
+Sign In
+</a>
+</div>
+<a class="button navigation__search-toggle" id="header-search-toggle">
+<i class="fa fa-search"></i>
+</a>
+</div>
+<div id="header-search" class="search main-header__container__col">
+<input placeholder="Enter keywords..." name="keywords" id="header-search-input" class="search__input" type="search" autocomplete="off">
+<button id="header-search-button" class="search__button">
+<i class="fa fa-search"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+<div id="sub-header" class="sub-header">
+<div class="sub-header__container">
+<div class="logo sub-header__container__col">
+<a href="/">
+<img class="logo__image" src="/assets/images/logo.svg">
+</a>
+</div>
+<div class="navigation sub-header__container__col">
+<div class="navigation__item">
+<a href="">
+Products
+<i class="arrow fa fa-angle-down"></i>
+</a>
+<div class="child-navigation__container">
+<div class="child-navigation">
+<div class="child-navigation__item">
+<a href="/products/hdn">
+Altimetry's Hidden Alpha
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/products/lit">
+Altimetry's High Alpha
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/products/etf">
+ETF Analyzer
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/products/mcc">
+Microcap Confidential
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/products/mtr">
+The Altimeter
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/products/ati">
+Timetable Investor
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation__item">
+<a href="">
+Daily Authority
+<i class="arrow fa fa-angle-down"></i>
+</a>
+<div class="child-navigation__container">
+<div class="child-navigation">
+<div class="child-navigation__item">
+<a href="/daily-authority">
+Overview
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/daily-authority/archive">
+Archive
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation__item">
+<a href="">
+About
+<i class="arrow fa fa-angle-down"></i>
+</a>
+<div class="child-navigation__container">
+<div class="child-navigation">
+<div class="child-navigation__item">
+<a href="/about">
+Overview
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/our-team">
+Our Team
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/investing-philosophy">
+Investing Philosophy
+</a>
+</div>
+<div class="child-navigation__item">
+<a href="/faq">
+FAQ
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="right-controls sub-header__container__col">
+<div class="social-links">
+<a target="_blank" class="social-links__link" href="https://twitter.com/AltimetryStock">
+<i class="fa fa-twitter"></i>
+</a>
+<a target="_blank" class="social-links__link" href="https://www.facebook.com/AltimetryResearch">
+<i class="fa fa-facebook"></i>
+</a>
+<a target="_blank" class="social-links__link" href="https://www.youtube.com/channel/UCr69smVpfH3zEaQGLMwREug">
+<i class="fa fa-youtube-play"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="mobile-toggle" class="hamburger">
+<div class="hamburger__icon">
+<div class="hamburger__icon__line one">&nbsp;</div>
+<div class="hamburger__icon__line two">&nbsp;</div>
+<div class="hamburger__icon__line three">&nbsp;</div>
+</div>
+</div>
+<div class="mobile-search">
+<form action="/search" autocomplete="off">
+<div class="mobile-search__inner">
+<div class="mobile-search__inner__input">
+<input id="mobile-search-input" name="keywords" autocomplete="off" placeholder='Enter keywords...' type='text'>
+</div>
+<button class="mobile-search__inner__button"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+<div class="mobile-social">
+<a target="_blank" href="https://twitter.com/AltimetryStock" class="mobile-social__link"><i class="fa fa-twitter"></i></a>
+<a target="_blank" href="https://www.facebook.com/AltimetryResearch" class="mobile-social__link"><i class="fa fa-facebook"></i></a>&nbsp;
+<a target="_blank" href="https://www.youtube.com/channel/UCr69smVpfH3zEaQGLMwREug" class="mobile-social__link"><i class="fa fa-youtube-play"></i></a>&nbsp;
+</div>
+</div>
+<div id="sub-header-placeholder print-hide">
+&nbsp;
+</div>
+<div class="site-ad__sticky-header-container print-hide">
+</div>
+<main class="home">
+<div id="interaction-public-home-banner"></div>
+<section>
+<div class="container">
+<div class="container__col">
+<div class="featured-post">
+<div class="featured-post__image">
+<div class="ui-cropped-image">
+<div style="background-color: #ececec; background-image: url('https://assets.altimetry.com/uploads/2023/05/town-sign-96612_960_720.jpeg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="How to Stay Safe When the Market's Swelling Bankruptcy Wave Finally Crashes" title="How to Stay Safe When the Market's Swelling Bankruptcy Wave Finally Crashes">
+</div>
+</div>
+</div>
+<div class="featured-post__body">
+<div class="featured-post__body__inner">
+<h2 class="featured-post__body__header">How to Stay Safe When the Market's Swelling Bankruptcy Wave Finally Crashes</h2>
+<div class="featured-post__body__excerpt">
+Watch for signs of "zombie companies"...
+</div>
+</div>
+</div>
+<div class="featured-post__button">
+<a class="button" href="/articles/how-to-stay-safe-when-the-markets-swelling-bankruptcy-wave-finally-crashes">
+Read More
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="container__col">
+<a href="/about" class="about">
+<div class="about__description">
+<h2 class="about__description__title">
+Altimetry Financial Research sees the numbers that Wall Street doesn’t.
+</h2>
+<p class="about__description__excerpt">
+"Altimetry" is the study of height or measuring altitude. Said differently, the study of things that go up. And in the investment world, who doesn't like things that go up? Altimetry Research is a boutique financial research and publishing firm providing individual investors with unique, unbiased investment recommendations and analytics. As the consumer arm of [&hellip;]
+</p>
+<div class="about__description__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+About Us
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+</div>
+<div class="about__counter">
+<div class="about__counter__number" id="companies-covered">
+4855
+</div>
+<div class="about__counter__caption">
+Companies Covered
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="gray">
+<div class="container">
+<div class="container__col">
+<div class="products">
+<div class="slider__container">
+<div class="slider products__slider">
+<div class="products__slider__slide single-product">
+<a href="/products/hdn" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2020/04/image004-768x551.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="Altimetry's Hidden Alpha" title="Altimetry's Hidden Alpha">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+Altimetry's Hidden Alpha
+</h3>
+<div class="single-product__body__description">
+A monthly research service focused on finding the safest, large cap companies whose TRUE profits and earnings are hidden from 99% of other investors. Using our proprietary uniform accounting datasets, we target well-known stocks with the goal of 50% - 100% upside.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+<div class="products__slider__slide single-product">
+<a href="/products/lit" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2020/04/image001-768x432.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="Altimetry's High Alpha" title="Altimetry's High Alpha">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+Altimetry's High Alpha
+</h3>
+<div class="single-product__body__description">
+A monthly research service that uses our proprietary uniform accounting datasets to identify small cap companies and high upside investment opportunities that are being overlooked by Wall Street and the main financial media.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+<div class="products__slider__slide single-product">
+<a href="/products/etf" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2022/11/etf-bg-768x513.jpeg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="ETF Analyzer" title="ETF Analyzer">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+ETF Analyzer
+</h3>
+<div class="single-product__body__description">
+A web-based software tool that gives you an inside window into the quality of the funds you can invest in, allowing you to see funds through a Uniform Accounting lens.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+<div class="products__slider__slide single-product">
+<a href="/products/mcc" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2020/07/mccbg-768x512.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="Microcap Confidential" title="Microcap Confidential">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+Microcap Confidential
+</h3>
+<div class="single-product__body__description">
+Microcap Confidential is an investing research service that looks to find and recommend microcap stocks whose profits and earnings are hidden from Wall Street and the mainstream media, giving you a huge advantage over 99% of investors.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+<div class="products__slider__slide single-product">
+<a href="/products/mtr" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2020/04/image003-768x513.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="The Altimeter" title="The Altimeter">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+The Altimeter
+</h3>
+<div class="single-product__body__description">
+A web-based software tool that acts as a “stock truth detector,” allowing you to see a company’s financial statements through a uniform accounting lens. You can compare, side-by-side, the “as reported” numbers with the true earnings for any U.S. company.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+<div class="products__slider__slide single-product">
+<a href="/products/ati" class="single-product__inner">
+<div class="single-product__featured-image">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2023/01/timetable-investor--768x456.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="Timetable Investor" title="Timetable Investor">
+</div>
+</div>
+</div>
+<div class="single-product__body">
+<h3 class="single-product__body__title">
+Timetable Investor
+</h3>
+<div class="single-product__body__description">
+A monthly overview of the Altimetry team's macro view of the markets.
+</div>
+<div class="single-product__body__arrow-link">
+<span class="ui__arrow-link arrow-link uppercase" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</span>
+</div>
+<div class="sub-flag">
+Subscriptions
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="slider__nav">
+<div class="slider__nav__left"><i class="fa fa-chevron-left"></i></div>
+<div class="slider__nav__right"><i class="fa fa-chevron-right"></i></div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="container__col">
+<div class="daily-authority">
+<div class="daily-authority__mobile-branding">
+Altimetry's Hidden Alpha
+</div>
+<div class="daily-authority__featured-image">
+<a href="/articles/ride-this-steady-unloved-health-care-giant-to-profits">
+<div class="ui-cropped-image">
+<div style="background-color: #ededed; background-image: url('https://assets.altimetry.com/uploads/2020/04/image004-300x215.jpg'); background-position: center center;" class="ui-cropped-image__inner cover">
+<img src="/assets/images/placeholders/_overlay.png" alt="Ride This Steady, Unloved Health Care Giant to Profits" title="Ride This Steady, Unloved Health Care Giant to Profits">
+</div>
+</div>
+</a>
+</div>
+<div class="daily-authority__body">
+<div class="daily-authority__body__branding">
+Altimetry's Hidden Alpha
+</div>
+<div class="daily-authority__body__title">
+<a href="/articles/ride-this-steady-unloved-health-care-giant-to-profits">
+Ride This Steady, Unloved Health Care Giant to Profits
+</a>
+</div>
+<div class="daily-authority__body__excerpt">
+This month in <i>Altimetry's Hidden Alpha</i>, Joel Litman details why investors lost faith in a longtime innovator's brand. It happened just as the business started losing some of its COVID-related revenue. These problems make it look like a business in decline. But a closer look reveals the company remains an innovative growth engine and is in fact still intact...
+</div>
+<div class="daily-authority__body__arrow-links">
+<a class="ui__arrow-link arrow-link uppercase" href="/products/hdn" target="">
+Learn More
+&nbsp;&nbsp;<i class="fa fa-forward"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="gray">
+<div class="container">
+<div class="container__col">
+<div class="testimonials">
+<div class="slider__container">
+<div class="slider testimonials__slider">
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+<div class="testimonial-text">
+<p><span>Just a quick note to tell you guys how impressed I have been with your service.&#160;&#160;I have several lifetime/all-access subscriptions and you are exceeding my expectations.</span></p>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">Bruce H.</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+<div class="testimonial-text">
+<p>Thanks for making great information available to retail investors!</p>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">Kent N.</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+<div class="testimonial-text">
+<p><span>I love the research and work you are producing.&#160; I recently became a lifetime subscriber and am thankful for the research you are publishing. &#160;It is quite valuable to see the adjusted ROA and P/E figures you provide on each company.</span></p>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">Christopher G.</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+<div class="testimonial-text">
+<p><span>I am enjoying the service immensely.&#160; I run every recommendation from Stansberry and Palm Beach through the Altimeter and if it doesn&#8217;t pass your forensic muster I usually pass on the trades.&#160; That tool alone has helped me have unshakable conviction already in trades I would have blown out of at a loss due to ignorance and fear.</span></p>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">Tom P.</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+<div class="testimonial-text">
+<p><span>Thank you for the daily reviews and updates. They are one of my priority reads each morning. The Hidden Alpha reports also illuminate values that I would never find on my own.</span></p>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">Jim M.</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonials__slider__slide">
+<div class="testimonial-layer1">
+ <div class="testimonial-text">
+<div>I wanted to say that I appreciate all the work that your doing. As a retail investor/trader I am thankful to have come across this data. I use this portal regularly . Before I make a decision for a position I will see what your publication has mentioned.&#160;&#160;</div>
+<div></div>
+<div>You are doing a great service&#8212;&#8212;&#8212;-Thank you</div>
+</div>
+</div>
+<div class="testimonial-layer2">
+<div class="testimonial-layer2__inner">
+<div class="testimonial-layer2__header">
+<div class="testimonial-quote">&nbsp;</div>
+</div>
+<div class="testimonial-layer2__footer">
+<h3 class="testimonial-author">David L.</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider__nav">
+<div class="slider__nav__left"><i class="fa fa-chevron-left"></i></div>
+<div class="slider__nav__right"><i class="fa fa-chevron-right"></i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="master-footer print-hide">
+<section>
+<div class="container transparent">
+<div class="container__col">
+<div class="master-footer__logo">
+<img src="/assets/images/logo-reversed.svg">
+</div>
+<div class="master-footer__social-links">
+<a class="master-footer__social-links__link" href="https://www.facebook.com/AltimetryResearch" target="_blank">
+<i class="fa fa-facebook"></i><span>Facebook</span>
+</a>
+<a class="master-footer__social-links__link" href="https://twitter.com/AltimetryStock" target="_blank">
+<i class="fa fa-twitter"></i><span>Twitter</span>
+</a>
+<a class="master-footer__social-links__link" href="https://www.youtube.com/channel/UCr69smVpfH3zEaQGLMwREug" target="_blank">
+<i class="fa fa-youtube-play"></i><span>YouTube</span>
+</a>
+</div>
+</div>
+<div class="container__col">
+<form action="https://signup.altimetry.com/" target="_blank" method="GET" onSubmit="" autocomplete="off">
+<input type="hidden" name="cid" value="MKT423945">
+<input type="hidden" name="eid" value="MKT424396">
+<input type="hidden" name="step" value="start">
+<input type="hidden" name="assetId" value="AST115842">
+<input type="hidden" name="encryptedSnaid" value="">
+<input type="hidden" name="snaid" value="">
+<div class="master-footer__subscribe-box">
+<div class="master-footer__subscribe-box__container subscribe-box">
+<h3 class="subscribe-box__header">
+Sign up to receive Altimetry Daily Authority straight to your inbox.
+</h3>
+<div class="subscribe-box__form">
+<input class="subscribe-box__form__input" type="email" name="email" placeholder="Email Address" required aria-required="true" autocomplete="off">
+<button id="submitBtn" class="subscribe-box__form__button light-gray">JOIN</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="container transparent">
+<div class="container__col">
+<div class="sub-footer">
+<div class="sub-footer__links-and-copyright">
+<div class="copyright">
+&copy; 2023 Altimetry. All rights reserved.
+</div>
+<div class="links">
+<a href="/privacy-policy">Privacy Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/terms-of-use">Terms of Use</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/privacy-policy#adchoice">Ad Choices</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/dmca">DMCA Policy</a>
+<div>
+<a href="https://beaconstreet-privacy.my.onetrust.com/webform/c246f198-7123-4766-b29c-917342eff0f7/b69eb8ba-bed8-471b-8670-5c53e3ba9da9" target="_blank">Do Not Sell My Personal Information</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/contact">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#" onclick="window.Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Cookie Preferences</a>
+</div>
+</div>
+</div>
+<div class="sub-footer__disclaimer">
+Protected by copyright laws of the United States and international treaties. This website
+may
+only be used pursuant to the subscription agreement and any reproduction, copying, or
+redistribution (electronic or otherwise, including on the world wide web), in whole or in
+part,
+is strictly prohibited without the express written permission of Altimetry.
+</div>
+</div>
+</div>
+</div>
+</section>
+</footer>
+<div class="site-ad site-ad__sticky-footer-container print-hide">
+</div>
+<div id="alt-ui__spinner">
+<div id="alt-ui__spinner__icon"><i class="fa fa-spinner"></i></div>
+<div id="alt-ui__spinner__backdrop">&nbsp;</div>
+</div>
+<div id="alt-ui__modal">
+<div id="alt-ui__modal__scroll-container">
+<div id="alt-ui__modal__scroll-container__inner"></div>
+</div>
+<div id="alt-ui__modal__backdrop">&nbsp;</div>
+</div>
+</body>
+</html>
