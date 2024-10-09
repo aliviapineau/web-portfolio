@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://secure-prod-assets.s3.amazonaws.com/common/css/bootstrap/bootstrap.min.4.3.1.css" rel="stylesheet">
+<link href="https://secure-prod-assets.s3.amazonaws.com/css/elements_2.2.css" rel="stylesheet">
+	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.typekit.net/yjb2ihw.css">
+
+
+
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+<script>
+        //In-Line JS goes here
+	
+$(document).ready(function(){
+    $( "#button-switch-stansberry").click(function() {
+          $(".switch-content-stansberry").removeClass("hidden");
+          $(".switch-content-portfoliowise").addClass("hidden");
+          $(".switch-content-chaikin").addClass("hidden");
+
+          $("#button-switch-stansberry").addClass("button-switch-active");
+          $("#button-switch-portfoliowise").removeClass("button-switch-active");
+          $("#button-switch-chaikin").removeClass("button-switch-active");
+});
+    $( "#button-switch-chaikin").click(function() {
+          $(".switch-content-chaikin").removeClass("hidden");
+          $(".switch-content-portfoliowise").addClass("hidden");
+          $(".switch-content-stansberry").addClass("hidden");
+		
+		
+          $("#button-switch-chaikin").addClass("button-switch-active");
+          $("#button-switch-portfoliowise").removeClass("button-switch-active");
+          $("#button-switch-stansberry").removeClass("button-switch-active");
+});
+    $( "#button-switch-portfoliowise").click(function() {
+		  $(".switch-content-portfoliowise").removeClass("hidden");
+          $(".switch-content-chaikin").addClass("hidden");
+          $(".switch-content-stansberry" ).addClass("hidden");
+		
+          $("#button-switch-portfoliowise").addClass("button-switch-active");
+          $("#button-switch-chaikin").removeClass("button-switch-active");
+          $("#button-switch-stansberry").removeClass("button-switch-active");
+});
+	
+});
+
+	
+	
+//    $( "#button-switch-chaikin").click(function() {
+//          $(".button-switch-right").addClass("button-switch-active");
+//          $("#button-switch-portfoliowise").removeClass("button-switch-active");
+//          $("#button-switch-chaikin").removeClass("button-switch-active");
+//
+//    });
+//    $( "#button-switch-chaikin").click(function() {
+//          $(".switch-content-stansberry").addClass("hidden");
+//          $(".switch-content-chaikin").removeClass("hidden);
+//          $("#button-switch-stansberry").removeClass(".button-switch-active");
+//
+//    });
+//    $( "#button-switch-portfoliowise").click(function() {
+//          $("#button-switch-portfoliowise").addClass("button-switch-active");
+//          $("#button-switch-chaikin").removeClass("button-switch-active");
+//          $("#button-switch-stansberry").removeClass("button-switch-active");
+//
+//});
+			
+			
+	
+
+</script>
+<style>
+	:root {
+		--darkblue: #003193;
+		--lightblue: #E9EDF5;
+	}
+
+@font-face {
+    font-family: "ProximaNova-ExtraBold";
+    src: url("https://marketingassets.cloudsna.com/prod/fonts/stansberry/proximanova/proximanova-extrabold-webfont.woff") format("woff"), url("https://marketingassets.cloudsna.com/prod/fonts/stansberry/proximanova/proximanova-extrabold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("https://marketingassets.cloudsna.com.s3.amazonaws.com/prod/fonts/stansberry/proximanova/proximanova-bold-webfont.woff") format("woff"), url("https://marketingassets.cloudsna.com.s3.amazonaws.com/prod/fonts/stansberry/proximanova/proximanova-bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-semibold-webfont.eot');
+	src: local('Gibson SemiBold'), local('Gibson-SemiBold'), 
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-semibold-webfont.eot?#iefix') format('embedded-opentype'), 
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-semibold-webfont.woff') format('woff'), 
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-semibold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+    font-family: "Gibson";
+    src: url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-webfont.eot');
+	src: local('Gibson Regular'), local('Gibson-Regular'),
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-webfont.eot?#iefix') format('embedded-opentype'), 
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-webfont.woff') format('woff'), 
+		url('https://secure-prod-assets.s3.amazonaws.com/common/fonts/gibson/gibson-webfont.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+	.content-placeholder {
+		background-color: black;
+		height: 300px;
+		width: auto;
+	}
+	
+	
+	.icon-placeholder {
+		background-color: black;
+		height: 100px;
+		width: auto;
+	
+	}
+	
+	
+	:root {
+		font-family: proxima-nova, sans-serif;
+		
+	}
+	
+	body {
+		line-height: 1.325;
+		font-family: proxima-nova, sans-serif;
+		
+	}
+	
+	.row {
+		margin: 0;
+		
+	}
+	
+	h1, h2, h3, h4 {
+		     font-family: proxima-nova,  "ProximaNova-Bold"; sans-serif;
+font-weight: 700;
+
+	}
+	
+	
+	h2 {
+	
+	}
+
+	h3 {
+		font-size: 36px
+	}
+	.wrapper {
+		max-width: 1050px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		padding-top: 40px;
+	}
+	
+	.center-content {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.hidden{
+		display: none;
+	}
+	
+	
+/*	HEADER css*/
+	header {
+		background: #FFFFFF;
+		padding: 0 0 10px;
+	}
+	.header-content {
+		margin: 0 auto;
+		display: block;
+		max-width: 1050px;
+		width: 100%;
+		padding-top: 15px
+	}
+	
+	.header-content .logo {
+		float: left;
+		max-width: 350px;
+		width: 100%;
+	}
+	
+	.header-content button {
+		float: right;
+		border: 2px solid #5CA646;
+		background: #FFFFFF;
+		padding: 5px 25px;
+		
+	}
+/*	HEADER css ends*/
+
+	
+/*	TOP BANNER css*/
+
+	
+	#top-content {
+		background-color: #003193;
+		color: #FFFFFF;
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}
+	
+	#top-content h1 {
+		font-size: 35px;
+		line-height: 1.1;
+		font-weight: 700;
+		padding: 25px 0 15px;
+		
+	}
+	
+	#top-content p {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	
+	#top-content input{
+		background: #FCFCFC 0% 0% no-repeat padding-box;
+		border: 1px solid #AAAAAA;
+		border-radius: 3px;
+		font-size: 16px;
+		margin-bottom: 10px
+	}
+	#top-content button {
+		background: #00BA2D;
+		padding: 7px 30px;
+		color: #FFFFFF;
+		font-weight: bold;
+		border-radius: 3px;
+	}
+	
+	.form-group {
+    margin-bottom: .3rem;
+	}
+	
+	#top-content .col-intro {
+		padding-right: 40px;
+	}
+	#top-content .col-contact {
+		border-left: 2px solid #FFFFFF;
+		padding-left: 40px;
+		padding-top: 20px;
+	}
+	
+	@media screen and (max-width: 767px) {
+		#top-content .col-contact {
+    border-left: inherit;
+    padding: 10px 30px;
+			
+			 
+			
+}
+		
+#top-content .col-intro {
+    padding-right: inherit;
+    padding: 0 30px;
+
+}
+	}
+/*	TOP BANNER css ends*/
+/*	BODY css*/
+p, li{
+		line-height: 1.8;
+	
+	}
+	#main-content {
+
+	}
+	#main-content  li{
+
+font-size: inherit;
+	}
+	#main-content .buttons button {
+		color: #0F75CE;
+
+		padding: 7px 30px;
+	}
+	.button-switch-container li{
+		position: relative;
+		float: left;
+		flex: auto;
+	}
+	
+	
+	
+	.icons {
+		margin: 0 auto;
+		max-width: 800px;
+		padding:  20px 0;
+	}
+	
+	.icons p{
+		padding: 15px 0;
+		font-size: 15px;
+		line-height: 1.5 !important;
+	}
+	
+	
+	.icon {
+		max-width: 50px
+	}
+	
+	.icons .col {
+		width: 50px;
+	}
+	
+	.company-logos {
+		max-height: 50px;
+		width: auto;
+	}
+	
+	.blue-bg {
+		background-color: #E9EDF5;
+	}
+	
+
+/*	SWITCH CONTENT*/
+	
+.button-switch-bar {
+		margin: 20px 0 50px;
+	
+
+
+	}
+	
+
+	
+	.button-switch {
+		background-color: #003193;
+		color: #FFFFFF;
+		padding: 10px;
+	}
+	
+	.button-switch:hover {
+		background-color: #E9EDF5;
+		color: #003193;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.button-switch-active {
+		background-color: #E9EDF5;
+		color: #003193;
+	}
+	
+	.button-switch-left {
+		border-radius: 10px 0 0 10px;
+		border-right: solid 1px #E9EDF5;
+	}
+	.button-switch-right {
+		border-radius: 0px 10px 10px 0px;
+		border-left: solid 1px #E9EDF5;
+
+	}
+	
+	.portfoliowise-desc-box h1{
+		font-size: 16px;
+		color: #FFFFFF;
+	}
+	
+	.portfoliowise-desc-box .col-3 {
+		background-color: var(--darkblue);
+		padding: 10px;
+		min-height: 150px;
+		
+	}
+	
+	.portfoliowise-desc-box p{
+		padding: 10px 0;
+		font-size: 15px;
+		line-height: 1.325;
+		
+	}
+	
+	.portfoliowise-desc-box {
+		margin: 10px 0 0;
+		
+	}
+	
+	.portfoliowise-desc-box .img-center-sm {
+		margin: 15px auto;
+	}
+/*
+	#wide-content {
+		background-color: #1C3E6B;
+		color: white;
+	}
+	
+	#wide-content .wrapper{
+		max-width: 1200px;
+	}
+	
+	#wide-content h3 {
+		font-family: "ProximaNova";
+		font-size: 23px;
+	}
+*/
+	
+	
+	footer {
+		background-color: #003193;
+		color: #FFFFFF;
+		font-size: 18px;
+		line-height: 1.325;
+		font-family: Proxima Nova;
+		
+	}
+	footer a {
+		color: #87BFFF;
+
+	}
+	
+	
+	footer .wrapper {
+		margin-top: 40px;
+		padding: 25px;
+	}
+/*	BODY css ends*/
+
+@media screen and (max-width: 768px){
+
+		.br-hide {
+			display: none;
+		}
+
+		.img-shift {
+			margin-top: 0px;
+		}
+		
+
+	}	
+@media screen and (max-width: 500px){
+	.header-content button {
+		float: none;
+		margin: 10px auto;
+		display: block;
+	}
+	.header-content .logo {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		display: block;
+	}
+	#top-content {
+		padding-top: 80px;
+		
+	}
+	
+	#top-content h1 {
+		font-size: 30px;
+	}
+	
+	.company-logos {
+		height: 30px;
+		margin: 20px auto;
+	}
+	footer {
+		font-size:14px;
+		
+	}
+	}
+	
+	
+</style>
+		   
+	
+</head>
+
+
+<body>
+<header>
+	<div class="header-content row">
+		<div class="row">
+		<div class="col-sm"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/Logo-1.png" class="logo" alt="logo" /></div>
+		<div class="col-sm"><button onclick="window.location.href='https://stansberryinvestorpro.com/login';">Investor Pro login</button></div>
+		</div>
+	</div>
+</header>
+<section id="top-content">
+	<div class="wrapper">
+		<div class="row">
+			<div class="col-md-7 col-intro">
+				<div class="intro">
+					<h1>Your Outsourced Investment Research and Management Solution</h1>
+					<p>Welcome to Chaikin Advisory Solutions, your forward-thinking investment research and idea generation solution, packaged into three intuitive cloud-based platforms, Chaikin Analytics, PortfolioWise, and Stansberry Investor Pro.</p>
+				</div>
+			</div>
+			<div class="col-md-5 col-contact">
+				<div class="contact-form">
+					<p>Schedule a demo to learn more about our Product Suite</p>
+							<form class="sna-page-form">
+								<div class="w3-container w3-red" style="height: 0"> </div>
+								<div class="store-subscribe-error" style="color: red;"></div>
+								<div class="sna-freetrail-exists"></div>
+								<div class="form-group"> <input type="text" class="form-control sna-first-name" id="first_name" placeholder="First name" required="" /></div>
+								<div class="form-group"><input type="text" class="form-control sna-last-name" id="last_name" placeholder="Last name" required="" /></div>
+								<div class="form-group"> <input type="email" id="emailField" class="form-control sna-email" placeholder="Work email" />
+									<div class="invalid-tooltip sna-email-invalid">Invalid Email</div>
+								</div>
+								
+								<div class="form-group"><button class="form-control btn form-button sna-single-optin" type="submit">Schedule Your Demo</button></div>
+							</form>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="main-content">
+	<div class="wrapper">
+		<div class="center-content">
+			<h2>Our goal is simple</h2>
+			<p>We’re offering advisors like you our suite of unique analytical tools to <strong>help you make better investment selections for your clients.</strong><br />Our research is driven by a team of over 30 analysts – MBAs, PhD’s, and CFA Charter holders–with
+				a combined 175 years in the markets to create <strong><u>independent, actionable ideas</u></strong> ranging from:</p>
+			<div class="icons">
+				<div class="row justify-content-center">
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/capital.png" class="icon" alt="icon" />
+						<p>Capital efficient GARP ideas</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/deep+value.png" class="icon" alt="icon" />
+						<p>Deep value, contrarian</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/small-cap+growth.png" class="icon" alt="icon" />
+						<p>Small-cap growth and value</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/income.png" class="icon" alt="icon" />
+						<p>Income</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/index.png" class="icon" alt="icon" />
+						<p>ETFs</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/options.png" class="icon" alt="icon" />
+						<p>Options</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/commodity.png" class="icon" alt="icon" />
+						<p>Commodities</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/crypto.png" class="icon" alt="icon" />
+						<p>Cryptocurrencies</p>
+					</div>
+					<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/fully+allocated+portfolio.png" class="icon" alt="icon" />
+						<p>Five fully allocated portfolios</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7 col-left">
+				<h2>Investment research you’ve never experienced before.</h2>
+				<p>We are an entirely independent research outlet. Our analysts do not have a static coverage universe – nor do they manage money or have a trading desk. Their commentary is unique, unbiased, and actionable.</p>
+				<p>Chaikin Advisory Solution’s team of 30+ analysts are dedicated to uncovering the most profitable individual investment opportunities and making sense of the financial markets. Our team provides exceptional, alpha-generating investment recommendations
+					with a 22-year track record.</p>
+				<p>We thoughtfully designed our platforms for easy access to our independent research, providing real-time financial data that investment advisors need.</p>
+			</div>
+			<div class="col-md-5 col-right"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/hex-graphic.png" class="img-center-sm img-shift" alt="graphic" /></div>
+		</div>
+	</div>
+	<section class="blue-bg">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-6 col-left"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/PW+Bundle.png" class="img-center-med" alt="graphic" /></div>
+				<div class="col-md-6 col-right">
+					<h2>Meet Chaikin Analytics <br class="br-hide" />and PortfolioWise.</h2>
+					<p>The Chaikin suite of products, including Chaikin Analytics and PortfolioWise, are grounded on the unique, power gauge rating - a proprietary 20-factor model that projects performance of a stock or ETF over a 3 to 6 month period. This rating, along
+						with our proprietary calculations for Chaikin Money Flow, Overbought/Oversold, and Relative Strength, make the Chaikin suite of products a powerful new tool for your practice.</p>
+					<p>PortfolioWise by Chaikin is one of the leading, cutting-edge, software suites that enables you to develop, compare, and analyze portfolios consisting of ETFs or equities. Our coverage universe includes 3,499 ETFs and 4,900+ equities. PortfolioWise
+						utilizes Chaikin Analytics’ ETF Power Gauge and relies on a proprietary rank of the technical strength of an ETF relative to all U.S.-Listed ETFs and aggregated Power Gauge Ratings of the U.S. equities held by the ETF. Combined, Chaikin Analytics
+						and PortfolioWise are some of the most powerful tools for advisors.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/money-h.png" class="img-center-sm company-logos" alt="logos" /></div>
+				<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/overbought-h.png" class="img-center-sm company-logos" alt="logos" /></div>
+				<div class="col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2022/B2B/stansberry-chaikin_advisory_solutions/relative-h.png" class="img-center-sm company-logos" alt="logos" /></div>
+			</div>
+		</div>
+	</section>
+	<div class="wrapper">
+		<div class="center-content">
+			<h2>What’s Included</h2>
+			<p>These must-have tools leverage our research, save you time, and help you stand out to your clients.</p>
+			<div class="button-switch-bar row ">
+				<div id="button-switch-chaikin" onclick="switch()" class="button-switch  button-switch-left button-switch-active col-md">CHAIKIN ANALYTICS</div>
+				<div id="button-switch-portfoliowise" class="button-switch col-md">PORTFOLIOWISE</div>
+				<div id="button-switch-stansberry" class="button-switch button-switch-right col-md ">STANSBERRY INVESTOR PRO</div>
+			</div>
+		</div>
+		<div class="row switch-content-chaikin">
+			<div class="col-md-6 col-left">
+				<h2>Chaikin Analytics</h2>
+				<div id="u57">
+					<div id="u57_text">
+						<p>Chaikin Analytics is a tool to research equities and ETFs based on Marc Chaikin’s Power Gauge Rating, a twenty-factor model designed to identify equities or ETFs likely to outperform broader markets over the next 30 to 90 days. The model is based
+							roughly on 80% Fundamental and 20% Technical analysis.</p>
+						<p>Top Features include:</p>
+						<ul>
+							<li><strong>Stock Screener</strong> - Our screener locates equities with specific attributes selected by the User. Chaikin Analytics also includes a total of ten pre-set screens developed in-house.</li>
+							<li><strong>ETF Screener</strong> - Screen ETFs based on Sector, Subsector, Industry Group, Style, or Strategy.</li>
+							<li><strong>ETF Comparison </strong>- Compare ETFs by Sector, Subsector, Style, Strategy, and Issuer. </li>
+							<li><strong>Health Check</strong> - Compares any user list performance to an index and displays recent earnings report, estimate changes, upcoming earnings announcements, and the Chaikin Power Grid. The Health Check show performance against an index
+								(SPY) over the last week. Report includes Power Gauge Rating Changes, Upcoming Earnings Reports, and Estimate Revisions. </li>
+							<li><strong>Discovery Tool</strong> - Allows user to find similar stocks to the stock compared. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-right"><img src="https://s3.amazonaws.com/assets.chaikinanalytics.com/mkt/2022/B2B/chakin-advisory-solutions/imgs/img-computer.png" class="img-center-med" alt="icon" /></div>
+		</div>
+		<div class="switch-content-portfoliowise hidden">
+			<div class="row">
+				<div class="col-12">
+					<h2>PortfolioWise by Chaikin</h2>
+					<p>PortfolioWise is one of the leading, cutting-edge, software suites that enables you  to develop, compare, and analyze portfolios consisting of ETFs or equities. Our coverage universe includes 3,499 ETFs and 4,900+ equities.</p>
+					<p>PortfolioWise utilizes Chaikin Analytics’ ETF Power Gauge and relies on: A proprietary rank of the technical strength of an ETF relative to all US-Listed ETFs. An aggregated Power Gauge Ratings of the U.S. Equities held by the ETF</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row portfoliowise-desc-box">
+						<div class="col-3">
+							<h1>Research Hub</h1>
+						</div>
+						<div class="col-4 blue-bg"><img src="https://s3.amazonaws.com/assets.chaikinanalytics.com/mkt/2022/B2B/chakin-advisory-solutions/imgs/img-chart-1.svg" class="img-center-sm" alt="chart" /></div>
+						<div class="col-5 blue-bg">
+							<p>Provides an in-depth analysis of individual equities and ETFs.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row portfoliowise-desc-box">
+						<div class="col-3">
+							<h1>ETF Comparison</h1>
+						</div>
+						<div class="col-4 blue-bg"><img src="https://s3.amazonaws.com/assets.chaikinanalytics.com/mkt/2022/B2B/chakin-advisory-solutions/imgs/img-chart-2.svg" class="img-center-sm" alt="chart" /></div>
+						<div class="col-5 blue-bg">
+							<p>Allows for a side by side comparison for up 7 ETFs at once.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row portfoliowise-desc-box">
+						<div class="col-3 blue-bg">
+							<h1>ETF Screener</h1>
+						</div>
+						<div class="col-9 blue-bg">
+							<p>An enhanced search tool that allows you to explore ETFs meeting user defined parameters including Equity ETFs, Fixed Income ETFs, Alternative ETFs, Commodity ETFs, Currency ETFs, and Multi-Asset ETFs.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="portfoliowise-desc-box row ">
+						<div class="col-3">
+							<h1>Diagnostic/ Compare</h1>
+						</div>
+						<div class="col-9 blue-bg">
+							<p>In-depth, side-by-side comparison of two portfolios or watchlists and includes 3-month, 6-month, YTD performance, historical annual return data, yield, and historical Power Gauge Ratings.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row switch-content-stansberry hidden">
+			<div class="col-md-6 col-left">
+				<h2>Stansberry Investor Pro</h2>
+				<p>Financial market coverage made easy. Stansberry Research’s internal NewsWire team provides the most streamlined coverage of the financial markets. Our team will provide you with daily market outlooks, delivered through Stansberry Investor Pro, email,
+					or smartphone, giving you untethered insights that are invaluable in engaging clients.</p>
+				<p>We’ve created five easy-to-follow and benchmark beating portfolios – without all the fees. The Stansberry Portfolio Solutions investment committee curates our analysts’ best ideas and delivers fully allocated model portfolios, ready for you to utilize.</p>
+				<p>Each model portfolio, and all of our research publications include real-time portfolio buys, sells, additions, and reductions, all packaged in an easy-to-follow monthly briefing, ready to share with your clients.</p>
+			</div>
+			<div class="col-md-6 col-right">
+				<video-js id="myPlayerId" data-account="5298920694001" data-player="rkj9vsdUM" data-embed="default" controls="controls" data-video-id="6307420230112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>
+			</div>
+			<script src="https://players.brightcove.net/5298920694001/rkj9vsdUM_default/index.min.js"></script>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="wrapper">
+		<p>Protected by copyright laws of the United States and international treaties. This website may only be used pursuant to the subscription agreement and any reproduction, copying, or redistribution (electronic or otherwise, including on the World Wide
+			Web), in whole or in part, is strictly prohibited without the express written permission of Stansberry Research, LLC. 1125 N Charles St, Baltimore MD 21201.</p>
+		<p>Contact Institutional Sales by phone at (855)-833-2490 or email <a href="mailto:Institutionalsales@stansberryresearch.com">Institutionalsales@stansberryresearch.com</a>.</p>
+		<p>© 2014-2022 Stansberry Research, LLC.</p>
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1794 @@
+ <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title></title>
+    <!-- Put CSS Calls here -->
+    <link href="https://secure-prod-assets.s3.amazonaws.com/common/css/bootstrap/bootstrap.min.4.3.1.css" rel="stylesheet">
+	<link href="https://secure-prod-assets.s3.amazonaws.com/common/css/elements.css" rel="stylesheet">
+	<link href="https://secure-prod-assets.s3.amazonaws.com/css/order-form-internal-no-header.css" rel="stylesheet">
+	<link href="https://use.typekit.net/cyn3jfd.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/yjb2ihw.css">
+<link href="https://secure-prod-assets.s3.amazonaws.com/css/conference-page-styling.css" rel="stylesheet" type="text/css">
+
+	
+	
+
+    <!-- Put Javascript Calls here -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript"  src="https://secure-prod-assets.s3.amazonaws.com/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript"  src="https://players.brightcove.net/5298920694001/rkj9vsdUM_default/index.min.js"></script>
+<script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script> 
+	<script type="text/javascript" src="https://secure-prod-assets.s3.amazonaws.com/js/jquery-final-countdown.js"></script>
+	<script type="text/javascript" src="https://static.cloudsna.com/store/PROD/js/jquery.countdown.js"></script>
+
+<script>
+$( 'a[href="#"]' ).click( function(e) {
+  e.preventDefault();
+} );
+
+
+$( 'a[href="#carouselExampleIndicators"]' ).click( function(e) {
+  e.preventDefault();
+} );
+
+	
+
+
+	
+
+
+$(document).ready(function () {
+//
+//$('.countdown').final_countdown({
+//	 start: new Date("2024/01/01 00:00:00").getTime(),
+//     end: new Date("2024/03/08 24:00:00").getTime(),
+//	selectors: {
+//		value_seconds: '.clock-seconds .val',
+//		canvas_seconds: 'canvas_seconds',
+//		value_minutes: '.clock-minutes .val',
+//		canvas_minutes: 'canvas_minutes',
+//		value_hours: '.clock-hours .val',
+//		canvas_hours: 'canvas_hours',
+//		value_days: '.clock-days .val',
+//		canvas_days: 'canvas_days'
+//	},
+//
+//
+//seconds: {
+//    borderColor: '#FFFFFF',
+//    borderWidth: '2'
+//},
+//minutes: {
+//    borderColor: '#FFFFFF',
+//    borderWidth: '2'
+//},
+//hours: {
+//    borderColor: '#FFFFFF',
+//    borderWidth: '2'
+//},
+//days: {
+//    borderColor: '#FFFFFF',
+//    borderWidth: '2'
+//}}, function() {
+//// Finish callback
+//});
+//	
+	
+         $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+              // Store hash
+              var hash = this.hash;
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+	
+});
+	
+
+    $("#rPurch").click(function(){
+          $(".opt-one").addClass("selected");
+          $("#rdoPriceChoicesa0p2E00000BVMHHQA5").prop('checked', true);
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+    $("#bPurch").click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").addClass("selected");
+		  $("#rdoPriceChoicesa0p2E00000BVMHWQA5").prop('checked', true);
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+    $("#yPurch").click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").addClass("selected");
+		  $("#rdoPriceChoicesa0p2E00000BVMHbQAP").prop('checked', true);
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+
+
+    $( "#rdoPriceChoicesa0p2E00000BVMHHQA5" ).click(function() {
+          $(".opt-one").addClass("selected");
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+        $( "#rdoPriceChoicesa0p2E00000BVMHWQA5" ).click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").addClass("selected");
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+        $( "#rdoPriceChoicesa0p2E00000BVMHbQAP" ).click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").addClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+    $( "#rdoPriceChoicesa0p2E00000BVMHgQAP" ).click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").addClass("selected");
+          $(".opt-five").removeClass("selected");
+    });
+    $( "#rdoPriceChoicesa0p2E00000BVMHlQAP" ).click(function() {
+          $(".opt-one").removeClass("selected");
+          $(".opt-two").removeClass("selected");
+          $(".opt-three").removeClass("selected");
+          $(".opt-four").removeClass("selected");
+          $(".opt-five").addClass("selected");
+});
+
+
+      	
+setTimeout(function pause_countdown(){
+                $('#event-timer').countdown('2024/03/08 24:00:00', function(event) {
+                  
+                     $(this).html(event.strftime('<div><span>%D</span> day%!D</div>' + '<div><span>%H</span> hour%!H</div>' + '<div><span>%M</span> minute%!M</div>' + '<div><span>%S</span> second%!S</div>'));
+                });
+                $('#event-timer2').countdown('2024/03/08 24:00:00', function(event) {
+                  
+                     $(this).html(event.strftime('<div><span>%D</span> day%!D</div>' + '<div><span>%H</span> hour%!H</div>' + '<div><span>%M</span> minute%!M</div>' + '<div><span>%S</span> second%!S</div>'));
+                });
+	 $('#event-timer2').on('finish.countdown', function(event) {
+                    $(this).html('').parent().addClass('disabled');
+                });
+                $('#event-timer').on('finish.countdown', function(event) {
+                    $(this).html('').parent().addClass('disabled');
+                });
+            }, 2000); 
+    </script>
+
+<style>
+	h1, h2, h3 {
+		font-family: "proxima-nova", sans-serif;
+		    font-weight: 700;
+	}
+
+.burst {
+
+max-width: 200px;
+display: block;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+z-index: 10;
+top: 2%;
+}
+#mobile-image{max-width: 600px; margin:auto; display:block;}
+    html {overflow-x:hidden;}
+	body {overflow-x:hidden; }
+         .video-js, .vjs-tech {margin:0;}
+		.top-content-wrapper {max-width: 1050px;  width: 100%; margin:0 auto; z-index: 10;position: relative;}
+		.custom-list {padding-left:40px;padding-right:50px;list-style: none;}
+		.bullets {margin: 0 auto 1em;padding-left: 2.0em;padding-top: 0;} 
+		.bullets.light-blue,.bullets.red,.bullets.yellow,.bullets.grey-x {background-repeat:no-repeat; background-size:23px;background-position-y:0px;}
+		.bullets.light-blue {background-image: url('https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/circle-check-sharp-solid-blue.png'); }
+		.bullets.red {background-image: url('https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/circle-check-sharp-solid-red.png'); }
+		.bullets.yellow {background-image: url('https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/circle-check-sharp-solid-yellow.png'); }
+		.bullets.grey-x {background-image: url('https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/circle-x-mark-sharp-solid.png'); }
+		.bullets.light-blue,.bullets.red,.bullets.yellow {color:#000;font-family: "proxima-nova", sans-serif;font-weight: 400;font-style: normal;font-size: 17px;line-height: 24px;}
+		.bullets.grey-x {color:#6F6F6F;font-family: "proxima-nova", sans-serif;font-weight: 400;font-style: normal;font-size: 17px;line-height: 24px;}
+		.body-image {width:100%;}
+	.redBLock>span {
+		background-color: #b9044e;
+	}
+
+.strong {font-weight:700;}
+
+		/*ABOUT SECTION*/
+	
+	.top {padding-top: 50px;}
+		.skinnyText {max-width:750px; width:100%;margin:0 auto;}
+	
+
+		.black, .b {color:#000;font-family: "proxima-nova", sans-serif;font-weight: 400;font-style: normal;font-size: 24px;}
+		.dropCap {color:#000;font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;font-size: 129px; float:left;line-height:.9em;padding-right:0.1em;}
+		.conferenceAudienceImage {width:100%;max-width:350px;padding:10px;}
+		.panelPhoto {width:100%;margin-bottom:40px;margin-top:20px;}
+		/*END ABOUT SECTION*/
+
+		/*NAVIGATION*/
+		.navback {background-color:#8516A8;box-shadow: 0px 3px 6px #00000067;    position: fixed;
+    width: 100%;z-index: 20;}
+	.filler-container {
+		background-color: #0F2235;
+		width: auto;
+	}
+	.logo-container {
+		background-color: #0F2235;
+		padding: 27px 70px 27px 20px;
+		min-width: 300px;
+		max-width: 30%;
+		overflow: hidden;
+		position: relative;
+   	
+	}
+	
+	.logo-container img.logo {float: right; block; position: relative; top:0px; max-width: 300px; z-index: 10; }
+	.navback .col {
+		width: auto;
+	
+	}
+	.navbar-wrapper {
+		max-width: 1400px;
+		width: 100%;
+		padding: 0;
+	}
+
+	
+	.navbar-wrapper .countdown-container {
+
+	}
+	.navbar-wrapper h3 {
+		font-size: 18px;
+		font-weight: 900;
+		color: #FFFFFF;
+		letter-spacing: -0.36px;
+		margin: auto;
+		top: 50%;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	
+	
+	.header-right-group .row {
+		height: 100%;
+		
+
+	}
+	.col-tagline {
+		width: 100%;
+		padding: 0;
+		height: 100%;
+		
+	}
+	
+	.col-timer {
+		width: 100%;
+		padding:0;
+		max-width: 250px;
+		height: 100%;
+		
+	}
+	
+	.col-timer .countdown-container {
+		position: absolute;
+		right: 0;
+	}
+	
+	.col-cta {
+		padding: 0;
+		width: 150px;
+		position: relative;
+		
+	}
+	a.cta-button {
+		border-radius: 22px 22px 22px 22px;
+		background-color: #FFD800;
+		padding: 5px 20px;
+		font-family: "proxima-nova", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		position: relative;
+		right: 0;
+		text-align: center;
+		box-shadow: 0px 3px 6px #00000067;
+		color: #000000;
+		margin: auto;
+		top: 35%;
+
+	}
+	
+	a.cta-button:hover {
+		background-color: #1D24BB;
+		color: #FFFFFF;
+		text-decoration: none;
+		box-shadow: none;
+		}
+	
+		.navbar a {color:#fff;font-family: "proxima-nova", sans-serif;font-weight: 600;font-style: normal;font-size: 23px;margin-right:30px; }
+		.customRegister {background-color: #FFD800;color:#000!important;border-radius: 30px;display:inline-block;padding:0.3rem 1.4rem!important; margin-top:4px; margin-left:20px;}
+		 .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");} 
+		/* .navbar-toggler-icon {padding-top:5px;} */
+		/* .navbar-toggler-icon::after {content:"MENU";color:#fff;font-family: "proxima-nova";font-weight:600;} */
+		
+        .container {display: inline-block;cursor: pointer;}
+		.bar1, .bar2, .bar3 {width: 35px;height: 5px;background-color: #ffffff;margin: 5px 0;transition: 0.4s;}
+		.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+		.change .bar2 {opacity: 0;}
+		.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
+		.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler-icon:focus { outline: none;box-shadow: none;}
+		/*END NAVIGATION*/
+
+        /*MARQUEE SECTION*/
+		.marqueeBack {width: 100%; height: 100%; background: url(https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/background.jpg);
+			background-size: contain; 
+			overflow:hidden;
+			position: relative;
+			padding: 200px 20px 350px
+			}
+	
+	.bg-logo {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+		top: -200px;
+		opacity: 0.5;
+
+		
+	}
+		.datePlace, .title, .subTitle{color:#fff;}
+		.datePlace {font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;font-size:26px;line-height: 1.1;}
+	
+	.datePlace span {
+		color: #FF9200; 
+	}
+		.title-container {
+					z-index: 10;
+		padding: 0 20px 40px;
+	}
+		.title {font-family: "proxima-nova", sans-serif;font-weight: 900;font-style: normal;font-size:60px;line-height: 1.1;margin-bottom:25px;}
+		.subTitle {font-family: "proxima-nova", sans-serif;font-weight: 300;font-style: normal;font-size: 30px;line-height:1.2;
+		letter-spacing:-0.45px;}
+                
+		 /*END MARQUEE SECTION*/
+
+		 /*INTRO VIDEO SECTION*/
+	
+	.video-container {
+		top: -320px;
+		z-index: 10;
+		width: 100%;
+		max-width: 1100px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: -300px
+		
+
+		
+	}
+		 .videoSection {max-height:663px;width:100%;margin:0 auto;border:20px solid #fff;margin-top:auto;}
+		 .player-container {width:100%;margin:0 auto;}
+		video {margin-left:-60%; margin-top:-20%;width:210%;height:100%;}
+		.conferenceHighlights {font-family: "proxima-nova", sans-serif;font-weight: 700;font-style: normal;font-size:30px; color:#a0a0a0;text-align: center; text-transform: uppercase; padding-top:10px; margin-bottom: -}
+		 /*END INTRO VIDEO SECTION*/
+
+	.white-gradient-background.top-section {
+		    margin-bottom: -60px;
+    padding-bottom: 60px;
+		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 59%,#dce1e6 100%);
+		z-index: 1;
+		position: relative;
+	}
+	
+	.white-gradient-background {
+		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 89%,#dce1e6 100%);
+
+	}
+	
+
+  @media screen and (max-width: 575px) {
+                  #mobile-image {
+                      display: none;
+                    }
+              }
+	
+		 @media screen and (max-width: 500px) {
+			 
+			 .storeOF {
+				     padding: 34px 20px 20px 50px;;
+			 }
+		 
+	}
+	
+               @media screen and (max-width: 425px){
+               .burst {
+                     left: 60%;
+                 }
+                }
+              @media screen and (max-width: 480px) {
+.storeOF h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 5vw;
+  }
+.storeOF .breakdown-desc {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 5vw;
+}
+				  .storeOF
+				  
+	}
+#about {
+
+}
+				  	  
+				  
+		#brilliant p {
+				font-weight: 400;
+			}
+
+	#choices {
+		height: auto;
+		background: none;
+		z-index: 1;
+		position: relative;
+		display: block;
+
+	}
+	
+	#choices .choices-bg{
+		width: 100%;
+		position: absolute;
+		margin-top: 20px;
+		height: 88%;
+	}
+	
+
+	
+	.tier-container row {
+		height: auto;
+	}
+	
+	
+	.tier-container {
+		max-width: 1000px;
+		width: 100%;
+		margin: 40px auto;
+	}
+	
+	
+.tier-col {
+	position: relative;
+	  flex-direction: column;	
+		justify-content: flex-end;
+  display: flex;
+  align-items: center;
+	}
+	
+	.img-tier {
+		width: 100%;
+		max-width: 330px;
+		bottom: 0;
+	}
+	
+
+	
+	#choices h3 {
+		text-align: center;
+		color: #4D4D4D;
+		padding-top: 10px;
+		font-size: 22px;
+	}
+	
+	.center-tier-content {
+		position: absolute;
+		top: 0;
+		color: #FFFFFF;
+		
+		color: #FFFFFF;
+		padding-top: 10px;
+	}
+	.center-tier-content h3{
+		color: #FFFFFF !important;
+		padding-top: 10px;
+	}
+	
+	
+	.center-tier-content .countdown-container {
+		top: -25px;
+		margin: 0 auto;
+		left: 20px;
+		min-width: 245px;
+		
+	}
+	#choices a.cta-button {
+		margin: 0 auto;
+		max-width: 250px;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		display: block;
+		background: #F300C4 0% 0% no-repeat padding-box;
+		font-size: 26px;
+		color: #FFFFFF;
+		
+	}
+/*TIER styling end*/
+	
+		.featuredSpeaker h3 {
+				font-weight: 400;
+				font-size: 28px;
+			}
+	
+	.asterisk {
+		font-size: 18px;
+		line-height: 1;
+	}
+	
+/*TIMER STYLING starts*/
+	
+.countdown-container {
+position: relative;
+	padding: 0;
+	width: 100%;
+	margin-right: -20px;
+
+	
+}
+.clock-item .inner {
+height: 0px;
+padding-bottom: 100%;
+position: relative;
+width: 100%;
+
+}
+.countdown-time-value.col-3 {
+		padding: 0;
+		margin: 20px -5px;
+		
+}
+.clock-canvas {
+border-radius: 50%;
+height: 0px;
+padding-bottom: 100%;
+  outline: 3px solid rgba(255,255,255,0.20) ;
+  outline-offset: -3px;
+}
+.text {
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+margin-top: -20px;
+position: absolute;
+top: 50%;
+text-align: center;
+width: 100%;
+}
+.text .val {
+font-size: 20px;
+}
+.text .type-time {
+font-size: 8px;
+	margin-top: -18px;
+	
+}
+	
+/*
+ @media (min-width: 768px) and (max-width: 991px) {
+.clock-item {
+margin-bottom: 30px;
+}
+}
+ @media (max-width: 767px) {
+.clock-item {
+margin: 0px 30px 30px 30px;
+}
+}
+	
+*/
+/*TIMER STYLING end*/
+	
+/*OG TIMER STYLING start*/
+
+	
+#event-timer, #event-timer2 {
+    color: #fff;
+    font-family: 'Roboto',arial,sans-serif;
+	font-weight: normal;
+    font-size: 12px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: lowercase;
+	border-bottom: none;
+	margin: auto;
+
+}
+#event-timer > div, #event-timer2 > div {
+    border-right: 1px solid rgba(255,255,255,0.45); 
+    display: inline-block;
+    margin-right: 0px;
+    padding-right: 0px;
+	width: 60px;
+    text-align: center;
+}
+#event-timer > div:last-child,#event-timer2 > div:last-child, #lead-clock .time-unit:last-child {
+    border-right: 0 none;
+    margin-right: 0;
+    padding-right: 0;
+}
+#event-timer span, #event-timer2 span {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 2px;
+font-weight: 700;
+}
+	
+	#event-timer {
+			top: 50%;
+	transform: translatey(-50%);
+	padding-bottom: 0;
+	position: absolute;
+	}
+	
+	#event-timer2 {
+		padding-top: 10px;
+			
+	}
+/*OG TIMER STYLING end*/
+
+	/*-------------------------*/
+    /*---MEDIA QUERIES START---*/
+	/*-------------------------*/
+		@media screen and (max-width:1400px) {
+			.filler-container {
+				display: none;
+			}
+		}
+		@media screen and (max-width:1200px) {
+			video {margin-left:-60%; margin-top:0%;width:210%;height:100%;}
+			.ticketImage {margin-bottom:-120px;}
+		}
+		@media screen and (max-width:1100px) {
+			.navbar-nav {margin-top:110px; text-align: center;}
+		}
+		@media screen and (max-width: 1024px){
+                          .burst {
+                               left: 60%;
+                            }
+                   }
+	
+	
+		@media screen and (max-width:992px){
+			
+			.navback {
+				position: relative;
+			}
+			.navback . {
+			}
+			
+			
+			.navbar-wrapper.col-auto {
+				display: block;
+				position: relative;
+			}
+			
+			.logo-container img.logo  {
+				float: none;
+				margin: 0 auto;
+				display: block;
+		
+
+				
+			}
+			.logo-container {
+				width: 100%;
+				display: block;
+				position: relative;
+				min-width: inherit;
+				max-width: inherit;
+				background: inherit;
+				    background: url(https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/background.jpg);
+			}
+			
+			.col-timer {
+				position: relative;
+				margin: auto;
+				width: 100%;
+			}
+			
+			.col-timer #event-timer {
+				position: relative;
+			}
+			.header-right-group {
+				display: block;
+				position: relative;	
+				padding: 10px;
+			}
+			
+			.col-cta .cta-button {
+			
+				top:5px;
+				
+				
+			}
+			
+			
+	}
+	
+	
+			@media screen and (min-width:768px){
+				.mobile-show {
+					display: none;
+				}
+	}
+	
+		@media screen and (max-width:768px){
+			.desktop-show {
+				display: none;
+			}
+			
+			.navbar-wrapper h3 {
+				position: relative;
+				display: block;
+				top: inherit;
+				transform: translate(0);
+				text-align: center;
+				
+			}
+			
+			
+			.logo-container {
+				padding: 20px;
+				}
+			.col-tagline {
+				display: block;
+				position: relative;
+				height: auto;
+				
+			}
+			
+			.white-gradient-background.top-section {
+				padding-bottom: 150px;
+				margin-bottom: -250px;
+			}
+			.col-timer .countdown-container {
+				position: relative;
+							margin-left: 20px;
+				
+			}
+			.col-timer {
+				height: auto;
+				padding: 40px 0 10px;
+				    margin-bottom: -20px;
+
+			}
+			.col-cta {
+				display: block;
+				margin: 20px auto -5px;
+				position: relative;
+				text-align: center;
+				
+			}
+				.header-right-group {
+				display: block;
+				position: relative;	
+				top: 10px;
+					
+			}
+			.marqueeBack {
+				padding-bottom: 10px;
+				padding-top: 60px;
+			}
+			
+			.video-container {
+				top: 0;
+				margin-bottom: 0px;
+			}
+			
+			.datePlace {
+				font-size: 22px;
+			}
+			
+			p.title {
+				font-size:45px;
+			}
+			
+			.bg-logo {
+			width: 150%
+		}
+			p.subTitle {
+				font-size: 22px;
+			}
+			
+			#choices {
+			}
+	#choices .choices-bg{
+
+		margin-top: 180px;
+		margin-bottom: -200px;
+		width: auto;
+	}
+			.img-tier {
+				margin-bottom: -20px;
+				padding-top: 40px;
+			}
+			
+			.tier-container {
+				padding-top: 100px;
+			}
+			
+	.center-tier-content {
+
+		padding-top: 50px;
+	}
+			
+			
+	
+		#brilliant h1{font-size:40px;}
+	
+		#vipSection h1 {font-size:40px; padding-left:15px; padding-right:15px;}
+		#livestream h1 {font-size:40px; padding-left:15px; padding-right:15px;}
+		.speakerText h1 {font-size:40px;}
+			
+	
+		.speakerBodyText {padding-left:15px}
+		.blueTitle {font-size:40px;}
+		.skinnyText p {padding-left:15px; padding-right:15px;}	
+		.sponsorLocationHeader {text-align: center; padding-left:15px;}
+		.sponsorText {padding-left:30px;}
+		/* .sponsorText p {padding-left:30px;} */
+		.becomeLink {display: block;margin-left:20px;}
+		.venueImageText {padding-left:0px;}
+		.venueTextBottomBlock{padding-left:30px;}
+		.sponsorP {padding-left:30px;}
+		.sponsorLocationHeader {text-align: center; font-size: 40px;font-family: "proxima-nova", sans-serif;font-weight:900;font-style: normal;color:#fff;}
+		.carousel-item{height:auto;}
+        .br-desk {display: none;}
+			
+			
+
+		/*MOBILE NAVIGATION*/
+		.navbar-brand img  {max-width: 250px;}
+			/* .navbar-nav {margin-top:60px;}  */
+		
+		/*END MOBILE NAVIGATION*/
+}
+	
+		@media screen and (max-width: 400px) {
+		
+		.bg-logo {
+			top: 0;
+		}
+			
+			p.title {
+    font-size: 34px;
+}
+	}
+	
+		/* .livestreamLink {margin-left:15px; margin-right:15px;} */
+		/* START VIDEO SECTION */
+		/* video {margin:0 auto;width:100%;} */
+		/* END VIDEO SECTION */
+
+		/* TICKET SECTION */
+		.secondOption, .thirdOption {border:none;}
+		.paddingIncrease {padding-bottom:0;}
+
+
+
+  
+
+		
+		/*ABOUT SECTION*/
+		.conferenceAudienceImage {margin-bottom:30px;}
+		/*LOCATION SECTION*/
+		.venueImageText {padding-left:0px;}
+		/*START SPONSOR QUESTION*/
+		.sponsorText {padding-left:0px;}
+
+		/*START SPEAKER SECTION*/
+		.modalImage {padding-right:0;margin:0 auto;text-align: center;}
+		.modalText {border-left:none; padding-left:0;}
+			/* START VIP SECTION */
+			.listPadding {margin-left:0px;} 
+		/* END VIP SECTION  */
+		.leftQimage, .rightQimage {display:none;}
+		input[type=radio]::before, input[type=checkbox]::before {
+			left:-15px;
+		}
+		.br-mobile {display: block;}
+	
+		}
+
+
+	
+	/*-------------------------*/
+    /*----MEDIA QUERIES END----*/
+	/*-------------------------*/
+
+</style>
+
+</head>
+
+<body>
+<div class="navback row">
+	<div class="col filler-container"></div>
+	<div class="navbar-wrapper col-auto">
+		<div class="row">
+			<div class="logo-container col-lg col-12"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/logo-2024-src-multicolor.svg" class="bg-logo mobile-show" /> <img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/logo-2024-src-reverse.svg"
+				 alt="Stansberry Conference &amp; Alliance - 2023" class="logo" /></div>
+			<div class="col-md col-12 header-right-group">
+				<div class="row ">
+					<div class="col-timer col-md">
+												<div id="event-timer"></div>
+
+						<!--COUNTDOWN TIMER starts-->
+<!--
+						<div class="countdown-container container">
+							<div class="clock row">
+								<div class="clock-item clock-days countdown-time-value col-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_days" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-days type-time">DAYS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-hours countdown-time-value col-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_hours" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-hours type-time">HOURS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-minutes countdown-time-value col-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_minutes" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-minutes type-time">MINUTES</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-seconds countdown-time-value col-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas_seconds" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-seconds type-time">SECONDS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+-->
+						<!--COUNTDOWN TIMER ends-->
+					</div>
+					<div class="col-tagline  col-md col-12">
+						<h3><span class="desktop-show">&lt; &lt;</span> Last Chance for Tier 2 Pricing - Act Now!</h3>
+					</div>
+					<div class="col-cta  col-md-auto col-12"><a href="#register" class="cta-button">Register</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col filler-container" style="background-color: inherit;"></div>
+</div>
+<div class="marqueeBack">
+	<!-- <img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/stream-from-home.png" class="burst" /> --><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/logo-2024-src-multicolor.svg" class="bg-logo" />
+	<div class="top-content-wrapper">
+		<div class="title-container">
+			<!-- <p class="title sm-block d-lg-none">Join Us at Our World-Class Financial Research Conference</p> -->
+			<p class="datePlace">October 21-23, 2024 | <span>ARIA Resort &amp; Casino, Las Vegas</span></p>
+			<p class="title">Join Us at the World’s Leading Financial Research Conference</p>
+			<p class="subTitle">Stansberry Research’s most popular event of the year can help you unlock financial success for 2024 and beyond…</p>
+		</div>
+	</div>
+</div>
+<!-- <div class="videoSection">
+	<div style="position: relative; display: block;">
+		<div style="padding-top: 56.25%;"><iframe style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;" src="https://players.brightcove.net/5298920694001/k7kYTMBz75_default/index.html?videoId=6340246876112" allowfullscreen="allowfullscreen" allow="encrypted-media"></iframe></div>
+	</div>
+	<p class="conferenceHighlights">2023 Conference Highlights</p>
+</div> -->
+<div class="white-gradient-background top-section">
+	<div class="video-container">
+		<div class="videoSection" style="text-align: center;">
+			<video-js id="myPlayerId" data-account="5298920694001" data-player="Sy88rvvCM" data-embed="default" controls="controls" data-video-id="6347397214112" data-playlist-id="" data-application-id="" class="vjs-fluid"></video-js>    <script type="text/javascript"  src="https://players.brightcove.net/5298920694001/Sy88rvvCM_default/index.min.js"></script>
+
+		</div>
+	</div>
+	<div class="row skinnyText black" id="about">
+		<div class="col-sm-12">
+			<h2 style="text-align: center;"><strong><em><br />Grab your Early Bird ticket while you can and get the <span style="text-decoration: underline;">lowest price</span> available... <span style="color: #b9044e;">$2,049</span>.</em></strong></h2>
+			<p></p>
+			<p><span style="text-decoration: underline; background-color: #ffff00;"><strong>This ticket price will only be available until 5 p.m., on Friday, March 15, 2024.</strong></span></p>
+			<p><span style="color: #b9044e;"><strong>Reserve your seat today to save almost $1,000!</strong></span></p>
+		</div>
+	</div>
+</div>
+<div id="choices"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/iStock-989110990-blue-v2.jpg" class="choices-bg" />
+	<div class="tier-container">
+		<div class="row">
+			<div class="col-md-4 tier-col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/price-tier-1h.png" class="img-tier mobile-show" alt="1999" />
+				<h3 class="desktop-show">EARLY BIRD TIER 1</h3>
+				<h3 class="mobile-show">EARLY BIRD TIER 1 <br />EARLY BIRD TIER 18<sup>th</sup></h3>
+				<img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/price-tier-1d.png" class="img-tier desktop-show" alt="1999" /></div>
+			<div class="col-md-4 tier-col">
+				<div class="center-tier-content">
+					<h3>EARLY BIRD TIER 2</h3>
+					<div id="event-timer2"></div>
+					<!--COUNTDOWN TIMER starts-->
+<!--
+					<div class="countdown-container container">
+						<div class="clock row">
+							<div class="clock-item clock-days countdown-time-value col-3">
+								<div class="wrap">
+									<div class="inner">
+										<div id="canvas_days2" class="clock-canvas"></div>
+										<div class="text">
+											<p class="val">0</p>
+											<p class="type-days type-time">DAYS</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clock-item clock-hours countdown-time-value col-3">
+								<div class="wrap">
+									<div class="inner">
+										<div id="canvas_hours2" class="clock-canvas"></div>
+										<div class="text">
+											<p class="val">0</p>
+											<p class="type-hours type-time">HOURS</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clock-item clock-minutes countdown-time-value col-3">
+								<div class="wrap">
+									<div class="inner">
+										<div id="canvas_minutes2" class="clock-canvas"></div>
+										<div class="text">
+											<p class="val">0</p>
+											<p class="type-minutes type-time">MINUTES</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clock-item clock-seconds countdown-time-value col-3">
+								<div class="wrap">
+									<div class="inner">
+										<div id="canvas_seconds2" class="clock-canvas"></div>
+										<div class="text">
+											<p class="val">0</p>
+											<p class="type-seconds type-time">SECONDS</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+-->
+					<!--COUNTDOWN TIMER ends-->
+				</div>
+				<img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/price-tier-2a.png" class="img-tier" alt="2049" /></div>
+			<div class="col-md-4 tier-col"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/price-tier-3g.png" class="img-tier mobile-show" alt="2249" />
+				<h3 class="desktop-show">EARLY BIRD TIER 3</h3>
+				<h3 class="mobile-show">EARLY BIRD TIER 3 <br />$2,499 UNTIL MAY 1<sup>st</sup></h3>
+				<img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/price-tier-3c.png" class="img-tier desktop-show" alt="2249" /></div>
+		</div>
+	</div>
+	<a href="#register" class="cta-button">Register</a>
+</div>
+<div class="white-gradient-background">
+	<div class="skinnyText black" style="padding: 40px 0;">
+		<p>You can look forward to world-class guest speakers, new investment ideas from our brilliant experts and sponsors, and as always – meet all your favorite Stansberry editors.</p>
+		<p><span style="text-decoration: underline;"><b>We’re still firming up our final 2024 speaker line-up, but past presenters include Shark Tank’s Kevin O’Leary, Dennis Miller, Julian Assange, and Steve Forbes.</b></span></p>
+		<p>Your ticket for the event will include:</p>
+		<ul type="disc">
+			<li>Access to all sessions on registered days </li>
+				<p class="asterisk"><em>*Please note: Wednesday October 23 is for Alliance members only</em></p>
+			<li>Special breakout presentations</li>
+			<li>Breakfast &amp; Lunch on registered conference days</li>
+			<li>Discounted ARIA room rates</li>
+			<li>60-Day Full Video Archive Access</li><p class="asterisk"> <em>*Please note: Not all presentation videos will be available for the full 60 days. We negotiate this on a case-by-case basis with our speakers.</em></p>
+			<li>And SO MUCH MORE!</li>
+		</ul>
+		<p>Refunds are available up to 30 days after purchase. After 30 days there will be no refunds and no credit.</p>
+		<p>You can also grab a discounted VIP ticket below!</p>
+		<p>If you have questions about your conference registration, our VIP Conference Team is available to you Monday through Friday from 9 AM until 5 PM EST. Call <span style="color: #b9044e;"><strong>(800) 201-4147</strong></span>.</p>
+		<p>We hope you will join us in Vegas for the 2024 event!</p>
+		<p> </p>
+		<h2 style="text-align: center;"><strong>22<sup>nd</sup> Annual Stansberry Conference<br />&amp; Alliance Meeting, October 21 – 23, 2024</strong></h2>
+		<p style="text-align: center;"> </p>
+		<p class="redBLock"><span>WORLD-CLASS LOCATION</span></p>
+		<h1 class="blueTitle">New location for 2024!</h1>
+		<div class="row">
+			<div class="col-md-3" style="padding: 0;">
+				<div class="row">
+					<div class="col-6 col-md-12 "><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/exterior+shot.png" class="imgCenter" style="padding: 0 0 40px;" /></div>
+					<div class="col-6 col-md-12 "><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/interior+shot.png" class="imgCenter" style="padding: 0 0 40px;" /></div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<p>This year’s conference will take place at the luxurious ARIA, a AAA Five Diamond rated resort and casino. It boasts world-class restaurants and tech-advanced rooms and suites that will surpass all your expectations...</p>
+				<img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/aaa-award.png" class="imgCenter" />
+				<p>The ARIA is known for its architectural attention to detail, world-renowned fine art, some of the biggest and classiest casinos and bars, five-star dining, and lavish spas.</p>
+				<p>**Discounted room rates accompany your event ticket.</p>
+			</div>
+		</div>
+		<h1 class="blueTitle">REGISTRATION</h1>
+		<p>To secure your spot at the 22<sup>nd</sup> Annual Conference simply select your plan and fill out the secure order form below.</p>
+		<p>Keep in mind, you can personally reach out to our conference team and book your reservation directly over the phone at <strong><span style="color: #ec1d21;">1 (800) 201 4147 </span></strong>between Monday through Friday, 9 a.m. to 5 p.m. Eastern time.</p>
+		<p>Here are your choices:</p>
+	</div>
+</div>
+<!-- START IN PERSON TICKETS SECTION -->
+<div id="inPersonTickets">
+	<div class="row">
+		<div class="column col-sm-12">
+			<p class="redBLock"><span>Register Today</span></p>
+			<h1 class="blueTitle">In-Person Tickets</h1>
+			<p class="greySub">Our conference team is on standby to assist with any questions,<br class="br-desk" />give us a call at (800) 201-4147.</p>
+		</div>
+	</div>
+	<div class="ticketOptions row">
+		<div class="col-sm-12 col-md-4 ticketColumn"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/ticket-2024-src-2-day.png" alt="Standard Ticket" class="ticketImage" />
+			<div class="ticketContent">
+				<h4>Retail price: <s style="color: #000;"><span style="color: #ff0000;">$2,999</span></s></h4>
+				<h3>JUST $2,049</h3>
+				<ul class="custom-list ticketOptionList">
+					<li class="bullets light-blue"><span style="text-decoration: underline;"><strong>Full access to all Stansberry Conference General Sessions</strong></span> on Monday, October 21 and Tuesday, October 22</li>
+					<li class="bullets light-blue"><span style="text-decoration: underline;"><strong>Special Breakout Sessions!</strong></span></li>
+					<li class="bullets light-blue"><span style="text-decoration: underline;"><strong>Continental Breakfast &amp; Lunch</strong></span> on Monday &amp; Tuesday</li>
+					<li class="bullets light-blue"><span style="text-decoration: underline;"><strong>Discounted Room Rates</strong></span> at the luxurious ARIA Resort &amp; Casino</li>
+					<li class="bullets light-blue"><span style="text-decoration: underline;"><strong>Full Video Archive Access</strong></span>. Review the conference online video archive as many times as you want until December 30, 2024<br /><span class="asterisk"><em><br />*Please note: Not all presentation videos will be available for the full 60 days. We negotiate this on a case-by-case basis with our speakers.</em><br /><em><br /></em></span></li>
+				</ul>
+				<p class="purchaseButtonContainer"><a href="#register" class="purchase bluePurchase" id="bPurch">Purchase Standard Ticket</a></p>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 ticketColumn"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/ticket-2024-src-3-day.png" alt="Alliance Member Ticket" class="ticketImage" />
+			<div class="ticketContent secondOption">
+				<h4>Retail price: <s style="color: #000;"><span style="color: #ff0000;">$2,999</span></s></h4>
+				<h3>JUST $2,049</h3>
+				<ul class="custom-list ticketOptionList">
+					<li class="bullets red"><span style="text-decoration: underline;"><strong>Full access to all Stansberry Conference General Sessions</strong></span> on Monday, October 21 and Tuesday, October 22</li>
+					<li class="bullets red"><strong><u>Full access to the Stansberry Alliance Day</u>  </strong>on Wednesday October 23</li>
+					<li class="bullets red"><span style="text-decoration: underline;"><strong>Special Breakout Sessions!</strong></span></li>
+					<li class="bullets red"><span style="text-decoration: underline;"><strong>Continental Breakfast &amp; Lunch</strong></span> on Monday, Tuesday, &amp; Wednesday</li>
+					<li class="bullets red"><span style="text-decoration: underline;"><strong>Discounted Room Rates</strong></span> at the luxurious ARIA Resort &amp; Casino</li>
+					<li class="bullets red"><span style="text-decoration: underline;"><strong>Full Video Archive Access</strong></span>. Review the conference online video archive as many times as you want until December 30, 2024<br /><span class="asterisk"><em><br />*Please note: Not all presentation videos will be available for the full 60 days. We negotiate this on a case-by-case basis with our speakers.</em><br /><em><br /></em></span></li>
+				</ul>
+				<p class="paddingIncrease purchaseButtonContainer"><a href="#register" class="purchase redPurchase" id="rPurch">Purchase Alliance Ticket</a></p>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4 ticketColumn"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/ticket-2024-src-VIP.png" alt="VIP Ticket" class="ticketImage" />
+			<div class="ticketContent thirdOption">
+				<h3><span style="color: #1d24bb;">Single:</span> $7,600</h3>
+				<h3><span style="color: #1d24bb;">Double:</span> $14,100</h3>
+				<ul class="custom-list ticketOptionList">
+					<li class="bullets yellow"><u><strong>One (1) 3-DAY FULL REGISTRATION</strong></u> <br />VIP All Access Pass to entire Stansberry Conference Series &amp; Alliance Meeting – Monday, October 21 to Wednesday, October 23.</li>
+					<li class="bullets yellow"><strong><u>Four (4) nights in an upgraded suite</u></strong> at the luxurious ARIA Resort &amp; Casino. Check in Sunday, October 20 and depart on Thursday, October 24.</li>
+					<li class="bullets yellow"><u><strong>First Class Round-Trip ground transportation</strong></u> <br />Arrive and depart from LAS airport in style with private car service.</li>
+					<li class="bullets yellow"><u><strong>“Best Seat in the House” </strong></u> <br />The best sightlines, sound, and upgraded seating for the event. You are guaranteed to be in one of the first two rows of classroom seating, right in front of the stage.</li>
+					<li class="bullets yellow"><u><strong>Conference Concierge </strong></u> <br />Need something while onsite? We got it. Our Stansberry VIP Concierge staff will be available to you during all conference hours.</li>
+					<li class="bullets yellow"><u><strong>VIP Conference Lounge Access. </strong></u> <br />Drinks, snacks, and a place to unwind during breaks. You don’t have to go all the way back to your room. Live conference coverage displayed on TV monitors, so you don’t miss a moment of
+						content.</li>
+					<li class="bullets yellow"><u><strong>VIP Vegas Kickoff Celebration!</strong></u> <br />Join us for an exclusive kickoff party with your fellow VIPs, Stansberry staff, and special guests. Enjoy a night of dinner… drinks… and entertainment while you mingle with our speakers
+						and sponsors.</li>
+					<li class="bullets yellow"><u><strong>Access to the 2024 Online Conference Video Archive</strong></u> <br />Enjoy access to the live streaming videos of all 3 days of conference presentations. You can go back and watch all the expert speakers as many times as you want until
+						December 30, 2024.</li>
+				</ul>
+				<p class="purchaseButtonContainer"><a href="#register" class="purchase yellowPurchase" id="yPurch">Purchase VIP Ticket</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END IN PERSON TICKETS SECTION -->
+<div id="speakers">
+	<div class="speakerText speakerTitleRow row">
+		<div class="column col-sm-12 featuredSpeaker">
+			<h3 class="speakerTitle"><span style="color: #ffffff;"><strong>We're cooking up something special for our 2024 event! Stay tuned for the big reveal of our fantastic lineup of speakers. It's going to be an event to remember, and you won't want to miss out on the excitement!</strong></span>
+				<!-- <p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/lance-armstong-small.png" class="keynoteImage" alt="Lance Armstrong" /></p>
+			<p class="keynote"><span>Keynote Speaker</span></p>
+			<h3>Lance Armstrong</h3>
+			<h4>Iconic Sports Legend &amp; Managing Partner at Next Ventures</h4> -->
+			</h3>
+					<p class="redBLock"><span>Past Speakers</span></p>
+
+		</div>
+	</div>
+
+	<p></p>
+	<div class="row speakerGrid">
+		<!-- START PORTER STANSBERRY -->
+		<div class="column col-sm-6 col-lg-4">
+			<!-- Button to Open the Modal -->
+			<div class="modalPanel" data-toggle="modal" data-target="#myModal">
+				<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/porter.png" class="keynoteImage" alt="Porter Stansberry" /></p>
+				<h4 class="sname">Porter Stansberry</h4>
+				<!--<p class="stitle">Founder of MarketWise and Porter &amp; Co.</p>-->
+			</div>
+			<!-- The Modal -->
+			<!--
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/porter.png" class="keynoteImage" alt="Porter Stansberry" /></p>
+									<p class="modalSpeakerName">Porter Stansberry</p>
+									<p class="modalSpeakerTitle">Founder of MarketWise and Porter &amp; Co.</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Porter Stansberry has been rewriting the rules of financial publishing for more than 25 years. Starting in 1999, he pecked out his first newsletter (Pirate Investor) on a borrowed laptop in a rundown apartment in Baltimore. He continues on the
+										path of creating superb financial advice today with his current venture, Porter &amp; Co., founded in April 2022, and as a board member for MarketWise, which he founded and whose board he rejoined in September 2023.</p>
+									<p>Porter’s astounding achievements in the financial newsletter industry are made possible by a simple guiding principle. Says Porter, “You can’t trick customers into paying for financial advice. You have to have something proprietary, valuable,
+										and easy to use. And you have to offer it for sale in an ethical way, by putting the customer first in every aspect of your business.”</p>
+									<p>With Porter &amp; Co., MarketWise, and everything Porter takes on, his mission has remained steady for more than two decades: be the world’s leading independent providers of financial research — and set new industry standards for customer service,
+										technological integration, and proprietary analytics.</p>
+									<p>Porter is also Founder of OneBlade, Inc., a men’s luxury shaving brand. He’s a proud husband and father, and an avid outdoorsman. Porter holds a Bachelor of Arts degree in political science and government from the University of Florida.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+		<!--END Porter Stansberry -->
+		<!-- START Danielle DiMartino Booth-->
+		<div class="column col-sm-6 col-lg-4">
+			<!-- Button to Open the Modal -->
+			<div class="modalPanel" data-toggle="modal" data-target="#myModal02">
+				<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/danielle-booth.png" class="keynoteImage" alt="Danielle Booth" /></p>
+				<p class="sname">Danielle DiMartino Booth</p>
+				<!--<p class="stitle">CEO &amp; Chief Strategist for Quill Intelligence LLC</p>-->
+			</div>
+			<!--
+			<div class="modal" id="myModal02">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/danielle-booth.png" class="keynoteImage" alt="Danielle DiMartino Booth" /></p>
+									<p class="modalSpeakerName">Danielle DiMartino Booth</p>
+									<p class="modalSpeakerTitle">CEO &amp; Chief Strategist for Quill Intelligence LLC</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Danielle set out to launch a #ResearchRevolution, redefining how market intelligence is conceived and delivered with the goal of not only guiding portfolio managers, but promoting financial literacy. To build QI, she brought together a core team
+										of investing veterans to analyze the trends and provide critical analysis on what is driving the markets – both in the United States and globally.</p>
+									<p>Since inception, commentary and data from Danielle’s “The Daily Feather” have appeared in other financial sources such as Bloomberg, CNBC, Fox Business, Institutional Investor, Yahoo Finance, the <em>Wall Street Journal</em>, MarketWatch, Seeking
+										Alpha, TD Ameritrade, TheStreet.com, and more. Danielle is the author of <em>FED UP: An Insider’s Take on Why the Federal Reserve is Bad for America</em>, a business speaker, and a commentator frequently featured on CNBC, Bloomberg, Fox News,
+										Fox Business News, BNN Bloomberg, Yahoo Finance and other major media outlets.</p>
+									<p>Prior to Quill, Danielle spent nine years at the Federal Reserve Bank of Dallas where she served as Advisor to President Richard W. Fisher throughout the financial crisis until his retirement in March 2015. Her work at the Fed focused on financial
+										stability and the efficacy of unconventional monetary policy.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+		<!--END DANIELLE DIMARTINO BOOTH -->
+		<!-- START Josh Brown -->
+		<div class="column col-sm-6 col-lg-4">
+			<!-- Button to Open the Modal -->
+			<div class="modalPanel" data-toggle="modal" data-target="#myModal6">
+				<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/josh-brown.png" class="keynoteImage" alt="Josh Brown" /></p>
+				<h4 class="sname">Josh Brown</h4>
+				<!--<p class="stitle">CEO, Ritholtz Wealth Management &amp; CNBC Contributor</p>-->
+			</div>
+			<!-- The Modal -->
+			<!--
+			<div class="modal" id="myModal6">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/josh-brown.png" class="keynoteImage" alt="Josh Brown" /></p>
+									<p class="modalSpeakerName">Josh Brown</p>
+									<div class="col-sm-12 col-md-9 modalText">
+										<p>Josh is a New York City-based financial advisor and the CEO of Ritholtz Wealth Management. They help people align their investments with their financial goals and manage portfolios for them. Clients range from high net-worth households to corporations
+											to retirement plans to charitable foundations.</p>
+										<p>Josh is also the author of the books <em>Backstage Wall Street</em> and <em>Clash of the Financial Pundits</em>. He serves on the advisory board of financial technology firms Riskalyze, Vestwell, Digital Assets Data Corp, as well as CNBC’s Financial
+											Advisor Council. In 2015, he was named in the Investment News’ “40 Under 40” list of top financial advisors. Josh runs “The Reformed Broker” blog and podcast, one of the most widely-read sites on the financial web.</p>
+										<p>Josh has been featured in or has written for <em>Fortune, Forbes, the Wall Street Journal, MarketWatch, Dow Jones Newswires, Reuters, CNNMoney, Bloomberg, CNBC</em>, the <em>New York Post, Crain’s New York Business, Investment News, Registered Rep, Financial Planning, Fortune, RIA Biz, Business Insider, American Public Media, NPR, TheStreet.com, the Washington Post, Buzzfeed, Barron’s</em>											and the <em>New York Times</em>.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+-->
+			<!-- END Josh Brown -->
+		</div>
+		<div class="row speakerGrid">
+			<!-- START MORGAN HOUSEL -->
+			<div class="column col-sm-6 col-lg-4">
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal7">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="keynoteImage" alt="Morgan Housel" /></p>
+					<h4 class="sname">Morgan Housel</h4>
+					<!--<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+				<div class="modal" id="myModal7">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+								<div class="row">
+									<div class="col-sm-12 col-md-3">
+										<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+										<p class="modalSpeakerName">Morgan Housel</p>
+										<p class="modalSpeakerTitle">Bestselling Author</p>
+									</div>
+									<div class="col-sm-12 col-md-9 modalText">
+										<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of
+											American Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+--></div>
+			<!-- END Morgan Housel -->
+			<!-- START Kevin O’Leary -->
+			<div class="column col-sm-6 col-lg-4">
+				<!-- Button to Open the Modal -->
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal8">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/kevin-oleary.png" class="keynoteImage" alt="Kevin OLeary" /></p>
+					<h4 class="sname">Kevin O’Leary</h4>
+					<!--				<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+			<div class="modal" id="myModal7">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3 modalImage">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+									<p class="modalSpeakerName">Kevin O’Leary</p>
+									<p class="modalSpeakerTitle">Bestselling Author</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of American
+										Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+			<!-- END Kevin O’Leary -->
+			<!-- START Julian Assange -->
+			<div class="column col-sm-6 col-lg-4">
+				<!-- Button to Open the Modal -->
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal9">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/julian-assange.png" class="keynoteImage" alt="Julian Assange" /></p>
+					<h4 class="sname">Julian Assange</h4>
+					<!--<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+			<div class="modal" id="myModal7">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3 modalImage">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+									<p class="modalSpeakerName">Julian Assange</p>
+									<p class="modalSpeakerTitle">Bestselling Author</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of American
+										Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+			<!-- END Julian Assange -->
+		</div>
+		<div class="row speakerGrid">
+			<!-- START Rick Rule -->
+			<div class="column col-sm-6 col-lg-4">
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal7">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/rick-rule.png" class="keynoteImage" alt="Rick Rule" /></p>
+					<h4 class="sname">Rick Rule</h4>
+					<!--<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+			<div class="modal" id="myModal7">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+									<p class="modalSpeakerName">Morgan Housel</p>
+									<p class="modalSpeakerTitle">Bestselling Author</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of American
+										Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+			<!-- END Morgan Housel -->
+			<!-- START Peter Zeihan -->
+			<div class="column col-sm-6 col-lg-4">
+				<!-- Button to Open the Modal -->
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal8">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/peter-ziehan.png" class="keynoteImage" alt="Peter Zeihan" /></p>
+					<h4 class="sname">Peter Zeihan</h4>
+					<!--				<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+			<div class="modal" id="myModal7">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3 modalImage">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+									<p class="modalSpeakerName">Peter Zeihan</p>
+									<p class="modalSpeakerTitle">Bestselling Author</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of American
+										Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+			<!-- END Kevin O’Leary -->
+			<!-- START Julian Assange -->
+			<div class="column col-sm-6 col-lg-4">
+				<!-- Button to Open the Modal -->
+				<div class="modalPanel" data-toggle="modal" data-target="#myModal9">
+					<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2024/2024-conference/hugh-hendry.png" class="keynoteImage" alt="Hugh Hendry" /></p>
+					<h4 class="sname">Hugh Hendry</h4>
+					<!--<p class="stitle">Bestselling Author</p>-->
+				</div>
+				<!-- The Modal -->
+				<!--
+			<div class="modal" id="myModal7">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="row justify-content-end"><button data-dismiss="modal" class="modalClose">Close X</button></div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3 modalImage">
+									<p><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/morgan-housel.png" class="speakerImage" alt="Morgan Housel" /></p>
+									<p class="modalSpeakerName">Julian Assange</p>
+									<p class="modalSpeakerTitle">Bestselling Author</p>
+								</div>
+								<div class="col-sm-12 col-md-9 modalText">
+									<p>Morgan is a partner at The Collaborative Fund. His book <em>The Psychology of Money</em> has sold over three million copies and has been translated into 53 languages. He is a two-time winner of the Best in Business Award from the Society of American
+										Business Editors and Writers, and winner of the New York Times Sidney Award. In 2022, MarketWatch named him one of the 50 most influential people in markets. He serves on the board of directors at Markel.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+--></div>
+			<!-- END Julian Assange -->
+		</div>
+	</div>
+</div>
+<!-- END SPEAKERS SECTION -->
+<div id="brilliant">
+	<div class="skinnyText black">
+		<h1>Brilliant Financial Ideas</h1>
+		<p>People come back to our conference year after year for many reasons… But the <em>incredible ideas and opportunities</em> presented at our event are likely first on the list.</p>
+		<img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/stack-brilliant.png" class="float-md-right mx-auto d-block conferenceAudienceImage" alt="Conference Audience" />
+		<p>We line up the smartest men and women in the industry to share their ideas with you... And our best editors reveal their favorite investment secrets for the upcoming year — before they are published or shared anywhere else.</p>
+		<p>You’ll hear actionable ideas and recommendations in a way you’d never experience reading our research at home. It’s not uncommon for an editor to drop a recommendation on stage and see cellphones and laptops “light up” as guests rush to check out the
+			details.</p>
+		<p><span class="strong">Call our conference team to answer any questions and secure your conference ticket access to our best conference yet: (800) 201 4147.</span></p>
+	</div>
+</div>
+<p></p>
+<!-- START VIP SECTION -->
+<div id="vipSection">
+	<h1>THE MANY PERKS OF BEING A VIP TICKETHOLDER…</h1>
+	<div class="row vipImageRow">
+		<div class="col-sm-6 col-md-3"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/fpo-photo-audience-1.png" alt="" class="vipImage " /></div>
+		<div class="col-sm-6 col-md-3"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/photo-vip-dibiase.png" alt="" class="vipImage d-none d-md-block" /></div>
+		<div class="col-sm-6 col-md-3"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/photo-chakin-dan-party.png" alt="" class="vipImage d-none d-md-block" /></div>
+		<div class="col-sm-6 col-md-3"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/fpo-photo-audience-4.png" alt="" class="vipImage d-none d-md-block" /></div>
+	</div>
+	<div class="row vipPerks">
+		<div class="col-sm-12 col-md-6 perksList firstList">
+			<ul class="custom-list-crown">
+				<li class="bullets crown">
+					<h5 class="perkTitle">Upgraded Suites</h5>
+					<p class="perkText">Four (4) nights in an upgraded luxury suite at the ARIA Resort and Casino Las Vegas. You will also get exclusive access to the Aria Sky Suites entrance and registration lobby along with special amenities.</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">"Best Seat in the House”</h5>
+					<p class="perkText">Choose your front-row seat with the best sightlines, sound, and upgraded seating for the event. You are guaranteed to be in one of the first two rows of seating for every speaker, plus access to enjoy lounging on our luxury general session seating.</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">Conference Concierge</h5>
+					<p class="perkText">Need something while on site? We got it. Our Stansberry VIP Concierge staff will be available to you during all conference hours.</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">VIP Lounge</h5>
+					<p class="perkText">Enjoy a quiet lounge, separate from the VIP meal room, where you can enjoy some peace to work and view the conference streamed to a large screen TV. **Upgraded coffee bar and snacks NEW from the 2023 event – it was a hit with our VIP’s. **</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">VIP Entrance &amp; Seating at the Alliance Closing Reception:</h5>
+					<p class="perkText">Close out your conference experience in style on Wednesday night.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-12 col-md-6 perksList ">
+			<ul class="custom-list-crown listPadding">
+				<li class="bullets crown">
+					<h5 class="perkTitle">First-class round-trip ground transportation</h5>
+					<p class="perkText">Arrive and depart from the Vegas airport in style with our private car service.</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">Special Meet &amp; Greets</h5>
+					<p class="perkText">Your opportunity to meet speakers and the extra chance to mingle with Stansberry editors during lunch in your VIP meal room.</p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">VIP Reception &amp; Dinner!</h5>
+					<p class="perkText">Join us for an exclusive kickoff party with your fellow VIPs, Stansberry staff, and special guests. Enjoy a night of dinner… drinks… and entertainment while you mingle with our speakers, staff, and sponsors. <em>**2024 Vegas VIP Party Guest: TBD**</em></p>
+				</li>
+				<li class="bullets crown">
+					<h5 class="perkTitle">VIP Breakfast and Lunch Seating</h5>
+					<p class="perkText">Enjoy all of your daytime meals in the VIP meal room.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="VipDisclaimer">
+			<p>*** NOTE: There are a limited amount of discounted 2024 VIP tickets. If you are interested in the VIP experience, please reserve your ticket below or call our VIP conference team at (800) 201 4147 before this premiere discounted access is sold out.</p>
+		</div>
+	</div>
+</div>
+<!-- END VIP SECTION -->
+<p></p>
+<p></p>
+<!-- START CAROUSEL SECTIION - WHAT ARE PEOPLE SAYING -->
+<div class="whatPeople">
+	<!-- <div class="row">
+		<div class="column col-sm-12">
+			<h1 class="blueTitle" id="whatPeople">What People Are Saying</h1>
+		</div>
+	</div> -->
+	<div class="row caroselSection">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div class="row">
+				<div class="column col-sm-12">
+					<h1 class="blueTitle" id="whatPeople">What People Are Saying</h1>
+				</div>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-md-2"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/left-quote-mark.png" class="leftQimage" /></div>
+						<div class="col-md-8">
+							<p>“This was an A+++++ conference!”<br />“I'm so impressed with your lineup every year!”<br />“[Conference was] outstanding – I had the opportunity to meet my Stansberry ‘heroes:’ Dan, Doc, Matt, and Eric.”<br />“Speakers were extraordinary, [and]
+								the evening get-togethers were fantastic!”</p>
+						</div>
+						<div class="col-md-2 "><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/right-quote-mark.png" class="rightQimage" /></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-xs-2 col-md-2"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/left-quote-mark.png" class="leftQimage my-auto" /></div>
+						<div class="col-xs-8 col-md-8">
+							<p>The information I’ve been given access to has been enlightening from a total macroeconomic and macropolitical perspective. I’ve attended the last several Stansberry conferences. And I got to say: Besides listening to some really brilliant people
+								and getting some interesting investment advice and great market information – many of the speakers touched my heart.</p>
+							<p>—Howard C.</p>
+						</div>
+						<div class="col-xs-2 col-md-2 "><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/right-quote-mark.png" class="rightQimage" /></div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-md-2"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/left-quote-mark.png" class="leftQimage" /></div>
+						<div class="col-md-8">
+							<p>I thought, ‘I’ve been a subscriber for a really long time. I should go and see what this conference is all about,’ thinking it would be like reading through the newsletters. I have been quite pleasantly surprised. It’s a fabulous conference, particularly
+								the Alliance day. I would say that one day was worth everything else just to get the information being presented. I wish I had come every year.</p>
+							<p>—Rebecca R.</p>
+						</div>
+						<div class="col-md-2 "><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/right-quote-mark.png" class="rightQimage" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="sliderControls"><a class="carousel-control-left" href="#carouselExampleIndicators" aria-controls="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-left-icon" aria-hidden="true"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/arrow-left-sharp-solid.png" /></span> </a>
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<a class="carousel-control-right" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-right-icon" aria-hidden="true"><img src="https://s3.amazonaws.com/assets.stansberryresearch.com/mkt/2023/CONFERENCE/arrow-right-sharp-solid.png" /></span> </a></div>
+		</div>
+	</div>
+</div>
+<!-- END CAROUSEL SECTIION - WHAT ARE PEOPLE SAYING -->
+<p></p>
+<!-- START ORDER FORM -->
+<div class="row" id="register">
+	<div class="main-middle order-form" style="padding-top: 50px;">
+		<h1 class="blueTitle">Choose Your Ticket:</h1>
+		<h3 align="center" style="color:#4D4D4D; font-size: 22px;">Exclusive limited-time early bird offer</h3>
+		<div class="storeOF opt-one selected row" role="button"><input type="radio" id="rdoPriceChoicesa0pHu00000BVZPaIAP" name="rdoPriceChoices" value="a0pHu00000C7HUSIA3" checked="checked" />
+			<div class="col-md-9 ticketType">
+				<h3 class="allianceLabel">Alliance Member</h3>
+				<p class="breakdown-desc">3-Day In-person Ticket</p>
+				<p class="disclaimer">Wednesday, October 23rd is reserved for our Exclusive Alliance Members Meeting</p>
+			</div>
+			<div class="col-md-3 price">
+				<p>$2,049</p>
+			</div>
+		</div>
+		<div class="storeOF opt-two row" role="button"><input type="radio" id="rdoPriceChoicesa0pHu00000BVZPfIAP" name="rdoPriceChoices" value="a0pHu00000C7HUcIAN" />
+			<div class="col-md-9 ticketType">
+				<h3 class="standardLabel">Standard Member</h3>
+				<p class="breakdown-desc">2-Day In-Person Ticket</p>
+			</div>
+			<div class="col-md-3 price">
+				<p>$2,049</p>
+			</div>
+		</div>
+		<div class="storeOF opt-three row" role="button"><input type="radio" id="rdoPriceChoicesa0pHu00000BVZPkIAP" name="rdoPriceChoices" value="a0pHu00000C7HUhIAN" />
+			<div class="col-md-9 ticketType">
+				<h3 class="vipSingleLabel">VIP Single</h3>
+				<p class="breakdown-desc">3-Day In-person Ticket</p>
+			</div>
+			<div class="col-md-3 price">
+				<p>$7,600</p>
+			</div>
+		</div>
+		<div class="storeOF opt-four row" role="button"><input type="radio" id="rdoPriceChoicesa0pHu00000BVZPuIAP" name="rdoPriceChoices" value="a0pHu00000C7HUmIAN" />
+			<div class="col-md-9 ticketType">
+				<h3 class="vipDoubleLabel">VIP Double</h3>
+				<p class="breakdown-desc">3-Day In-person Tickets</p>
+			</div>
+			<div class="col-md-3 price">
+				<p>$14,100</p>
+			</div>
+		</div>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+		<!--<div class="storeOF opt-five row" role="button"><input type="radio" id="rdoPriceChoicesa0pHu00000BVZPzIAP" name="rdoPriceChoices" value="a0pHu00000C7Hg3IAF" />
+				<div class="col-md-9 ticketType">
+					<h3 class="livestreamLabel">Livestream Access</h3>
+					<p class="breakdown-desc">Digital Pass</p>
+				</div>
+				<div class="col-md-3 price">
+					<p>$799</p>--></div>
+</div>
+<!-- <h3 class="start-now">To get started, simply fill out the secure order form below:</h3> -->
+<div class="main-middle order-form">
+	<section class="store-form-container">
+		<div class="secure-tab shadow-sm">
+			<p><img src="https://secure-prod-assets.s3.amazonaws.com/common/icons/lock-black.png" alt="lock icon" />Secure Order Form</p>
+		</div>
+		<div id="order">
+			<form class="store-form">
+				<div class="w3-container w3-red"></div>
+				<div class="store-subscribe-error" style="color: red;"></div>
+				<h3 class="ofHeader">Customer Information</h3>
+				<div class="customer-info">
+					<div class="form-group"><label class="col-form-label">Email*</label> <input class="form-control store-email-address" maxlength="80" type="email" placeholder="Enter email" />
+						<div class="store-error store-email-address-error">Email error</div>
+					</div>
+					<div class="form-group store-retype-email-container"><label class="col-form-label">Retype Email*</label> <input class="form-control store-retype-email-address" maxlength="80" type="email" placeholder="Retype email" />
+						<div class="store-error store-retype-email-address-error">Email should match</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">First Name*</label> <input class="form-control store-first-name" maxlength="80" required="" type="text" placeholder="Enter first name" />
+						<div class="store-error store-first-name-error">First name is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Last Name*</label> <input class="form-control store-last-name" maxlength="80" type="text" placeholder="Enter last name" />
+						<div class="store-error store-last-name-error">Last name is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Address*</label> <input class="form-control store-address" maxlength="80" required="" type="text" placeholder="Enter address" />
+						<div class="store-error store-address-error">Address is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Address 2</label> <input class="form-control store-address2" maxlength="80" type="text" placeholder="Enter address" /></div>
+					<div class="form-group"><label class="col-form-label">City*</label> <input class="form-control store-city" maxlength="80" required="" type="text" placeholder="Enter city" />
+						<div class="store-error store-city-error">City is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Country*</label><select class="form-control store-country" required="" data-default-countries="true"></select>
+						<div class="store-error store-country-error">Country is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">State*</label><select class="form-control store-state" data-default="1"></select>
+						<div class="store-error store-state-error">State is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Postal Code*</label> <input class="form-control store-postal-code" maxlength="10" required="" type="text" placeholder="Enter postal code" />
+						<div class="store-error store-postal-code-error">Postal Code is required</div>
+					</div>
+					<div class="form-group"><label class="col-form-label">Phone number*</label> <input class="form-control store-phone-number" maxlength="10" type="text" placeholder="Enter phone number" />
+						<div class="store-error store-phone-number-error">Phone number is required</div>
+					</div>
+				</div>
+				<h3 class="ofHeader" style="margin: 30px 0;">Payment Information</h3>
+				<div class="payment-info">
+					<div id="zuora_payment"></div>
+				</div>
+				<div class="form-group"><button class="btn store-submit" type="button">Place My Order</button></div>
+				<p>By clicking on the Submit button today, you are agreeing to our <a href="https://stansberryresearch.com/terms-of-use">Terms of Use</a> and <a href="https://stansberryresearch.com/privacy-policy">Privacy Policy</a>. <span>Stansberry Research will charge your conference choice selection rate</span> (
+					<a href="https://stansberryresearch.com/sales-tax">plus applicable taxes</a>) to your credit card or other means of payment which we will retain on file. If you have questions after your order is processed, you may reach our Customer Service team
+					at 1-888-261-2693 or refer to your order confirmation for further details.</p>
+			</form>
+		</div>
+	</section>
+</div>
+<div class="footerRow"><a class="footerItem" href="https://stansberryresearch.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> <a class="footerItem" href="https://stansberryresearch.com/legal-notices" target="_blank" rel="noopener">Legal Notices</a>
+	<a
+	 class="footerItem" href="https://stansberryresearch.com/terms-of-use" target="_blank" rel="noopener">Terms of Use</a> <a class="footerItem" href="https://stansberryresearch.com/dmca" target="_blank" rel="noopener">DMCA Policy</a> <a class="footerItem" href="https://stansberryresearch.com/do-not-sell" target="_blank" rel="noopener">Do Not Sell My Personal Information</a>		<a class="footerItem" href="https://stansberryresearch.com/privacy-policy/#adchoice" target="_blank" rel="noopener">Ad Choice</a> <a class="footerItem" href="#a" onclick="window.Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')" data-ol-has-click-handler="">Cookie Preferences</a></div>
+</body>
+</html>
